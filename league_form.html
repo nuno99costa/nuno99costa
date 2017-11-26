@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta name="google-site-verification" content="jEvvPKp7Ly44Bvb26KLoQq4j707GKmibZY2vRxPB6uI" />
+    <title>Nuno Costa - Web Developer</title>
+    <meta name="keywords" content="curriculum,resume,nuno,costa,pacos de ferreira,nuno costa,nuno99costa,front-end,developer">
+    <meta name="description" content="Nuno Costa Portfolio">
+    <link rel="icon" sizes="any" href="images/favicon.png">
+    <link type="text/css" rel="stylesheet" href="./css/style.css" media="screen,projection" />
+    <meta name="theme-color" content="#212121">
+    <meta name="author" content="Nuno Costa">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Rubik:700" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <img src="./images/favicon.png">
+                </li>
+                <li>
+                    <div>Nuno Costa</div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="card">
+            <div class="centeredBox">
+                <form id="form_league" method="get" action="./php/league.php">
+                    <label class="title">Your IGN</label>
+                    <input name="ign" type="text" class="validate">
+                    <select name="region">
+                        <option value="" disabled="disabled">Region</option>
+                        <option value="euw1">EUW</option>
+                        <option value="eun1">EUNE</option>
+                        <option value="br1">BR</option>
+                        <option value="na1">NA</option>
+                        <option value="kr">KR</option>
+                        <option value="ru">RU</option>
+                        <option value="jp1">JP</option>
+                        <option value="la1">LAN</option>
+                        <option value="la2">LAS</option>
+                        <option value="oc1">OCE</option>
+                        <option value="tr1">TR</option>
+                    </select>
+                    <input type="submit" id="submitButton" name="submitButton" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>   
+    <script src="./js/gaming.js"></script>
+</body>
+
+</html>
