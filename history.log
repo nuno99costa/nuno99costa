@@ -1,0 +1,276 @@
+
+Start-Date: 2017-10-19  15:18:49
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install linux-generic
+Install: linux-headers-generic:amd64 (4.13.0.16.17, automatic), iw:amd64 (4.9-0.1, automatic), libnl-genl-3-200:amd64 (3.2.29-0ubuntu3, automatic), linux-image-extra-4.13.0-16-generic:amd64 (4.13.0-16.19, automatic), linux-image-generic:amd64 (4.13.0.16.17, automatic), linux-headers-4.13.0-16-generic:amd64 (4.13.0-16.19, automatic), linux-headers-4.13.0-16:amd64 (4.13.0-16.19, automatic), libnl-3-200:amd64 (3.2.29-0ubuntu3, automatic), linux-image-4.13.0-16-generic:amd64 (4.13.0-16.19, automatic), crda:amd64 (3.18-0ubuntu1, automatic), linux-firmware:amd64 (1.169, automatic), linux-generic:amd64 (4.13.0.16.17), wireless-regdb:amd64 (2016.06.10-0ubuntu1, automatic)
+End-Date: 2017-10-19  15:19:49
+
+Start-Date: 2017-10-19  15:19:50
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install pciutils
+Install: pciutils:amd64 (1:3.5.2-1ubuntu1), libpci3:amd64 (1:3.5.2-1ubuntu1, automatic)
+End-Date: 2017-10-19  15:19:51
+
+Start-Date: 2017-10-19  15:19:51
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install usbutils
+Install: libusb-1.0-0:amd64 (2:1.0.21-2, automatic), usbutils:amd64 (1:007-4build1)
+End-Date: 2017-10-19  15:19:52
+
+Start-Date: 2017-10-19  15:20:05
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install tasksel
+Install: tasksel-data:amd64 (3.34ubuntu9, automatic), tasksel:amd64 (3.34ubuntu9)
+End-Date: 2017-10-19  15:20:06
+
+Start-Date: 2017-10-19  15:20:09
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install installation-report
+Install: installation-report:amd64 (2.62ubuntu1)
+End-Date: 2017-10-19  15:20:09
+
+Start-Date: 2017-10-19  15:20:12
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y -o APT::Install-Recommends=true -o APT::Get::AutomaticRemove=true -o APT::Acquire::Retries=3 install server^ minimal^ standard^ openssh-server^
+Install: cryptsetup-bin:amd64 (2:1.7.3-4ubuntu1), libxdmcp6:amd64 (1:1.1.2-3), info:amd64 (6.4.90.dfsg.1-1build1), manpages:amd64 (4.13-3), lxc-common:amd64 (2.1.0-0ubuntu1), libpolkit-gobject-1-0:amd64 (0.105-18), libgolang-gopkg-yaml.v2-1:amd64 (0.0+git20170407.0.cd8b52f-1ubuntu1), python3-distro-info:amd64 (0.17), iso-codes:amd64 (3.75-1), screen:amd64 (4.6.1-1), acpid:amd64 (1:2.0.28-1ubuntu1), liblvm2cmd2.02:amd64 (2.02.168-2ubuntu3), libgolang-github-pborman-uuid1:amd64 (0.0+git20150824.0.cccd189-1ubuntu9), libgolang-golang-x-text1:amd64 (0.0~git20170627.0.6353ef0-1ubuntu1), fuse:amd64 (2.9.7-1ubuntu1), libkrb5-3:amd64 (1.15.1-2), dosfstools:amd64 (4.1-1), libgssapi-krb5-2:amd64 (1.15.1-2), mtr-tiny:amd64 (0.87-1), libisccfg140:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), pollinate:amd64 (4.27-0ubuntu1), irqbalance:amd64 (1.1.0-2.3ubuntu1), update-manager-core:amd64 (1:17.10.11), uuid-runtime:amd64 (2.30.1-0ubuntu4), publicsuffix:amd64 (20170809.0951-1), ureadahead:amd64 (0.100.0-20), iptables:amd64 (1.6.1-2ubuntu1), at:amd64 (3.1.20-3ubuntu1), ed:amd64 (1.10-2.1), friendly-recovery:amd64 (0.2.36), libcurl3:amd64 (7.55.1-1ubuntu2), libmpfr4:amd64 (3.1.6-1), ubuntu-cloudimage-keyring:amd64 (2013.11.11), python3-software-properties:amd64 (0.96.24.17), cloud-initramfs-dyn-netconf:amd64 (0.39ubuntu1), strace:amd64 (4.15-2ubuntu3), libgirepository-1.0-1:amd64 (1.54.1-1), byobu:amd64 (5.123-0ubuntu1), libgolang-github-mattn-go-colorable1:amd64 (0.0.6-1ubuntu7), update-notifier-common:amd64 (3.186), ntfs-3g:amd64 (1:2016.2.22AR.2-2), git-man:amd64 (1:2.14.1-1ubuntu4), acl:amd64 (2.2.52-3build1), libparted2:amd64 (3.2-18), run-one:amd64 (1.17-0ubuntu1), mdadm:amd64 (4.0-2), python3-systemd:amd64 (234-1build1), libpsl5:amd64 (0.18.0-2), tcpdump:amd64 (4.9.2-1), snapd:amd64 (2.28.5+17.10), vlan:amd64 (1.9-3.2ubuntu5), pastebinit:amd64 (1.5-1), libgolang-golang-x-crypto1:amd64 (1:0.0~git20170629.0.5ef0053-1ubuntu1), python3-urllib3:amd64 (1.21.1-1), squashfs-tools:amd64 (1:4.3-4ubuntu1), bsdmainutils:amd64 (9.0.12+nmu1ubuntu1), libgolang-golang-x-net1:amd64 (1:0.0+git20170629.c81e7f2+dfsg-1ubuntu1), bind9-host:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), language-selector-common:amd64 (0.180), libdevmapper-event1.02.1:amd64 (2:1.02.137-2ubuntu3), lshw:amd64 (02.18-0.1ubuntu3), libwrap0:amd64 (7.6.q-26), lsof:amd64 (4.89+dfsg-0.1), open-iscsi:amd64 (2.0.874-4ubuntu3), powermgmt-base:amd64 (1.31+nmu1), dnsutils:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), geoip-database:amd64 (20170912-1), perl-modules-5.26:amd64 (5.26.0-8ubuntu1), libgolang-github-mattn-go-sqlite3-1:amd64 (1.2.0+git20170802.105.6654e41~dfsg1-1ubuntu1), dnsmasq-base:amd64 (2.78-1), ubuntu-standard:amd64 (1.404), xdelta3:amd64 (3.0.11-dfsg-1ubuntu1), nano:amd64 (2.8.6-3), ftp:amd64 (0.17-34), libnuma1:amd64 (2.0.11-2.1), libpython3.6:amd64 (3.6.3-1ubuntu1), python-apt-common:amd64 (1.4.0~beta3build2), open-vm-tools:amd64 (2:10.1.10-3), dmeventd:amd64 (2:1.02.137-2ubuntu3), git:amd64 (1:2.14.1-1ubuntu4), openssh-sftp-server:amd64 (1:7.5p1-10), gawk:amd64 (1:4.1.4+dfsg-1), lvm2:amd64 (2.02.168-2ubuntu3), libpolkit-agent-1-0:amd64 (0.105-18), libk5crypto3:amd64 (1.15.1-2), iputils-tracepath:amd64 (3:20161105-1ubuntu2), libisc160:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), python3-idna:amd64 (2.5-1), ebtables:amd64 (2.0.10.4-3.5ubuntu2), zerofree:amd64 (1.0.4-1), libip6tc0:amd64 (1.6.1-2ubuntu1), popularity-contest:amd64 (1.64ubuntu2), plymouth-theme-ubuntu-text:amd64 (0.9.2-3ubuntu17), python3-six:amd64 (1.10.0-4), ubuntu-server:amd64 (1.404), libpipeline1:amd64 (1.4.2-1), grub-legacy-ec2:amd64 (17.1-18-gd4f70470-0ubuntu1), command-not-found-data:amd64 (0.3ubuntu17.10.1), libntfs-3g872:amd64 (1:2016.2.22AR.2-2), libx11-6:amd64 (2:1.6.4-3), libgolang-gocapability1:amd64 (0.0~git20160928.0.e7cb7fa-1ubuntu2), python3-requests:amd64 (2.18.1-1), python3-httplib2:amd64 (0.9.2+dfsg-1), net-tools:amd64 (1.60+git20161116.90da8a0-1ubuntu1), lxd:amd64 (2.18-0ubuntu6), libgolang-github-olekukonko-tablewriter1:amd64 (0.0~git20170719.0.be5337e-1ubuntu1), libplymouth4:amd64 (0.9.2-3ubuntu17), krb5-locales:amd64 (1.15.1-2), libgolang-github-mattn-go-runewidth1:amd64 (0.0.2+git20170510.3.97311d9-1ubuntu1), liblxc1:amd64 (2.1.0-0ubuntu1), libperl5.26:amd64 (5.26.0-8ubuntu1), libgolang-github-gorilla-context1:amd64 (1.1-2ubuntu1), apport:amd64 (2.20.7-0ubuntu3), libiptc0:amd64 (1.6.1-2ubuntu1), libnfnetlink0:amd64 (1.0.1-3), libisns0:amd64 (0.97-2), groff-base:amd64 (1.22.3-9), libxau6:amd64 (1:1.0.8-1), libapparmor-perl:amd64 (2.11.0-2ubuntu17), librtmp1:amd64 (2.4+20151223.gitfa8646d.1-1), busybox-static:amd64 (1:1.22.0-19ubuntu2), python3-distupgrade:amd64 (1:17.10.7), man-db:amd64 (2.7.6.1-2), libgeoip1:amd64 (1.6.11-2ubuntu1), python3-commandnotfound:amd64 (0.3ubuntu17.10.1), psmisc:amd64 (23.1-1), gir1.2-glib-2.0:amd64 (1.54.1-1), xfsprogs:amd64 (4.9.0+nmu1ubuntu1), python3-update-manager:amd64 (1:17.10.11), libxcb1:amd64 (1.12-1ubuntu1), ubuntu-release-upgrader-core:amd64 (1:17.10.7), fonts-ubuntu-font-family-console:amd64 (1:0.83-0ubuntu2), python3-apport:amd64 (2.20.7-0ubuntu3), libkrb5support0:amd64 (1.15.1-2), libxmlsec1-openssl:amd64 (1.2.24-4), libnih1:amd64 (1.0.3-6ubuntu1), libfuse2:amd64 (2.9.7-1ubuntu1), liblvm2app2.2:amd64 (2.02.168-2ubuntu3), dmidecode:amd64 (3.1-1), libmspack0:amd64 (0.6-3), libgdbm3:amd64 (1.8.3-14), liblwres141:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), tcpd:amd64 (7.6.q-26), ufw:amd64 (0.35-5), libkeyutils1:amd64 (1.5.9-9ubuntu1), libxmuu1:amd64 (2:1.1.2-2), vim-runtime:amd64 (2:8.0.0197-4ubuntu5), libgolang-gopkg-lxc-go-lxc.v2-1:amd64 (0.0~git20161126.1.82a07a6-0ubuntu7), libnetfilter-conntrack3:amd64 (1.0.6-2), vim:amd64 (2:8.0.0197-4ubuntu5), libgolang-gopkg-tomb.v2-1:amd64 (0.0~git20161208.0.d5d1b58-1ubuntu2), parted:amd64 (3.2-18), libdrm2:amd64 (2.4.83-1), ncurses-term:amd64 (6.0+20160625-1ubuntu1), python3-pkg-resources:amd64 (36.2.7-2), libdbus-glib-1-2:amd64 (0.108-2), libutempter0:amd64 (1.1.6-3), mlocate:amd64 (0.26-2ubuntu1), libgolang-goprotobuf1:amd64 (0.0~git20170808.0.1909bc2-1ubuntu1), libpolkit-backend-1-0:amd64 (0.105-18), openssh-server:amd64 (1:7.5p1-10), libx11-data:amd64 (2:1.6.4-3), libgolang-1.8-std1:amd64 (1.8.3-2ubuntu1), libgolang-github-gosexy-gettext1:amd64 (0~git20130221-0ubuntu14), libreadline5:amd64 (5.2+dfsg-3build1), bcache-tools:amd64 (1.0.8-2build1), openssh-client:amd64 (1:7.5p1-10), sosreport:amd64 (3.4-1), python3-dbus:amd64 (1.2.4-1build3), time:amd64 (1.7-25.1build1), libgpm2:amd64 (1.20.4-6.2), libdns162:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), plymouth:amd64 (0.9.2-3ubuntu17), ltrace:amd64 (0.7.3-6ubuntu1), policykit-1:amd64 (0.105-18), libevent-2.1-6:amd64 (2.1.8-stable-4), python3-gi:amd64 (3.24.1-2build1), libgolang-github-gorilla-websocket1:amd64 (1.2.0-1ubuntu1), ethtool:amd64 (1:4.8-1), unattended-upgrades:amd64 (0.98ubuntu1), libedit2:amd64 (3.1-20170329-1), btrfs-tools:amd64 (4.12-1), libpcap0.8:amd64 (1.8.1-5ubuntu1), perl:amd64 (5.26.0-8ubuntu1), rsync:amd64 (3.1.2-2), libgolang-github-gorilla-mux1:amd64 (1.1-3ubuntu1), xauth:amd64 (1:1.0.9-1ubuntu2), apparmor:amd64 (2.11.0-2ubuntu17), libunistring0:amd64 (0.9.3-5.2ubuntu1), command-not-found:amd64 (0.3ubuntu17.10.1), dns-root-data:amd64 (2017072601), ssh-import-id:amd64 (5.7-0ubuntu1), libisccc140:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), wget:amd64 (1.19.1-3ubuntu1), libgolang-petname1:amd64 (2.8-0ubuntu1), telnet:amd64 (0.17-41), tmux:amd64 (2.5-3build1), libbind9-140:amd64 (1:9.10.3.dfsg.P4-12.6ubuntu1), overlayroot:amd64 (0.39ubuntu1), accountsservice:amd64 (0.6.42-0ubuntu3), cloud-initramfs-copymods:amd64 (0.39ubuntu1), gettext-base:amd64 (0.19.8.1-4ubuntu1), apport-symptoms:amd64 (0.20), python3-debian:amd64 (0.1.30), python3-gdbm:amd64 (3.6.3-0ubuntu1), curl:amd64 (7.55.1-1ubuntu2), python3-newt:amd64 (0.52.18-3ubuntu3), python3-certifi:amd64 (2017.4.17-2), cloud-guest-utils:amd64 (0.30-0ubuntu2), cryptsetup:amd64 (2:1.7.3-4ubuntu1), patch:amd64 (2.7.5-1build1), python3-chardet:amd64 (3.0.4-1), python3-problem-report:amd64 (2.20.7-0ubuntu3), lxd-client:amd64 (2.18-0ubuntu6), libidn2-0:amd64 (2.0.2-5), install-info:amd64 (6.4.90.dfsg.1-1build1), libxmlsec1:amd64 (1.2.24-4), uidmap:amd64 (1:4.2-3.2ubuntu4), libdumbnet1:amd64 (1.12-7build1), libcurl3-gnutls:amd64 (7.55.1-1ubuntu2), python3-apt:amd64 (1.4.0~beta3build2), libaccountsservice0:amd64 (0.6.42-0ubuntu3), libgolang-gopkg-flosch-pongo2.v3-1:amd64 (3.0+git20141028.0.5e81b81-0ubuntu9), hdparm:amd64 (9.51+ds-1), libxslt1.1:amd64 (1.1.29-2.1ubuntu1), bash-completion:amd64 (1:2.1-4.3ubuntu1), libxext6:amd64 (2:1.3.3-1), libsigsegv2:amd64 (2.11-1), libgolang-gopkg-inconshreveable-log15.v2-1:amd64 (2.11+git20150921.0.b105bd3-0ubuntu12), lxcfs:amd64 (2.0.7-0ubuntu5), libdrm-common:amd64 (2.4.83-1), liblzo2-2:amd64 (2.08-1.2), btrfs-progs:amd64 (4.12-1), software-properties-common:amd64 (0.96.24.17), liberror-perl:amd64 (0.17024-1), libpng16-16:amd64 (1.6.34-1)
+End-Date: 2017-10-19  15:22:09
+
+Start-Date: 2017-10-19  15:22:12
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y install -- openssh-server ntp ca-certificates
+Install: ntp:amd64 (1:4.2.8p10+dfsg-5ubuntu3), libopts25:amd64 (1:5.18.12-3, automatic)
+End-Date: 2017-10-19  15:22:15
+
+Start-Date: 2017-10-19  15:22:19
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -o APT::Install-Recommends=false -q -y install language-pack-en
+Install: language-pack-en:amd64 (1:17.10+20171012), language-pack-en-base:amd64 (1:17.10+20171012, automatic)
+End-Date: 2017-10-19  15:22:31
+
+Start-Date: 2017-10-19  15:22:48
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install grub-common
+Install: grub-common:amd64 (2.02~beta3-4ubuntu7), libfreetype6:amd64 (2.8-0.2ubuntu2, automatic)
+End-Date: 2017-10-19  15:22:50
+
+Start-Date: 2017-10-19  15:22:55
+Commandline: apt-get -o APT::Status-Fd=4 -o APT::Keep-Fds::=5 -o APT::Keep-Fds::=6 -q -y --no-remove install grub-pc
+Install: grub2-common:amd64 (2.02~beta3-4ubuntu7, automatic), grub-pc:amd64 (2.02~beta3-4ubuntu7), grub-pc-bin:amd64 (2.02~beta3-4ubuntu7, automatic), grub-gfxpayload-lists:amd64 (0.7, automatic)
+End-Date: 2017-10-19  15:22:57
+
+Start-Date: 2017-10-19  15:23:47
+Commandline: apt-get -y install libpam-cracklib
+Install: libcrack2:amd64 (2.9.2-5build1, automatic), cracklib-runtime:amd64 (2.9.2-5build1, automatic), libpam-cracklib:amd64 (1.1.8-3.2ubuntu3), wamerican:amd64 (2017.01.22-1, automatic)
+End-Date: 2017-10-19  15:23:50
+
+Start-Date: 2017-11-20  16:03:26
+Commandline: apt-get install apache2
+Install: libaprutil1:amd64 (1.6.0-2, automatic), libaprutil1-dbd-sqlite3:amd64 (1.6.0-2, automatic), apache2-data:amd64 (2.4.27-2ubuntu3, automatic), libapr1:amd64 (1.6.2-1, automatic), libaprutil1-ldap:amd64 (1.6.0-2, automatic), liblua5.2-0:amd64 (5.2.4-1.1build1, automatic), apache2-bin:amd64 (2.4.27-2ubuntu3, automatic), apache2:amd64 (2.4.27-2ubuntu3), apache2-utils:amd64 (2.4.27-2ubuntu3, automatic)
+End-Date: 2017-11-20  16:03:31
+
+Start-Date: 2017-11-20  16:04:02
+Commandline: apt-get install php
+Install: php7.1-readline:amd64 (7.1.8-1ubuntu1, automatic), php-common:amd64 (1:54ubuntu1, automatic), php7.1:amd64 (7.1.8-1ubuntu1, automatic), php7.1-opcache:amd64 (7.1.8-1ubuntu1, automatic), php7.1-json:amd64 (7.1.8-1ubuntu1, automatic), php:amd64 (1:7.1+54ubuntu1), php7.1-cli:amd64 (7.1.8-1ubuntu1, automatic), php7.1-common:amd64 (7.1.8-1ubuntu1, automatic), libapache2-mod-php7.1:amd64 (7.1.8-1ubuntu1, automatic)
+End-Date: 2017-11-20  16:04:12
+
+Start-Date: 2017-11-20  16:11:59
+Commandline: apt-get upgrade
+Upgrade: libcurl3:amd64 (7.55.1-1ubuntu2, 7.55.1-1ubuntu2.1), libapt-inst2.0:amd64 (1.5, 1.5.1), openssl:amd64 (1.0.2g-1ubuntu13, 1.0.2g-1ubuntu13.2), libsystemd0:amd64 (234-2ubuntu12, 234-2ubuntu12.1), apt:amd64 (1.5, 1.5.1), ubuntu-advantage-tools:amd64 (10, 10ubuntu0.17.10.1), libicu57:amd64 (57.1-6, 57.1-6ubuntu0.2), language-selector-common:amd64 (0.180, 0.180.1), lshw:amd64 (02.18-0.1ubuntu3, 02.18-0.1ubuntu4), ubuntu-standard:amd64 (1.404, 1.404.1), udev:amd64 (234-2ubuntu12, 234-2ubuntu12.1), ubuntu-server:amd64 (1.404, 1.404.1), grub-legacy-ec2:amd64 (17.1-18-gd4f70470-0ubuntu1, 17.1-27-geb292c18-0ubuntu1~17.10.1), libapt-pkg5.0:amd64 (1.5, 1.5.1), libudev1:amd64 (234-2ubuntu12, 234-2ubuntu12.1), ubuntu-minimal:amd64 (1.404, 1.404.1), apport:amd64 (2.20.7-0ubuntu3, 2.20.7-0ubuntu3.4), python3-distupgrade:amd64 (1:17.10.7, 1:17.10.8), ubuntu-release-upgrader-core:amd64 (1:17.10.7, 1:17.10.8), python3-apport:amd64 (2.20.7-0ubuntu3, 2.20.7-0ubuntu3.4), systemd-sysv:amd64 (234-2ubuntu12, 234-2ubuntu12.1), libpam-systemd:amd64 (234-2ubuntu12, 234-2ubuntu12.1), distro-info-data:amd64 (0.36, 0.36ubuntu0.1), systemd:amd64 (234-2ubuntu12, 234-2ubuntu12.1), apt-utils:amd64 (1.5, 1.5.1), wget:amd64 (1.19.1-3ubuntu1, 1.19.1-3ubuntu1.1), accountsservice:amd64 (0.6.42-0ubuntu3, 0.6.42-0ubuntu3.1), curl:amd64 (7.55.1-1ubuntu2, 7.55.1-1ubuntu2.1), python3-problem-report:amd64 (2.20.7-0ubuntu3, 2.20.7-0ubuntu3.4), libcurl3-gnutls:amd64 (7.55.1-1ubuntu2, 7.55.1-1ubuntu2.1), libaccountsservice0:amd64 (0.6.42-0ubuntu3, 0.6.42-0ubuntu3.1), libssl1.0.0:amd64 (1.0.2g-1ubuntu13, 1.0.2g-1ubuntu13.2), tzdata:amd64 (2017b-2, 2017c-0ubuntu0.17.10)
+End-Date: 2017-11-20  16:12:33
+
+Start-Date: 2017-11-20  20:38:40
+Commandline: apt-get install mariadb-server
+Install: mariadb-common:amd64 (10.1.25-1, automatic), libdbi-perl:amd64 (1.637-1, automatic), mariadb-server-core-10.1:amd64 (10.1.25-1, automatic), libaio1:amd64 (0.3.110-4, automatic), mariadb-server-10.1:amd64 (10.1.25-1, automatic), galera-3:amd64 (25.3.20-1, automatic), mysql-common:amd64 (5.8+1.0.2ubuntu1, automatic), libjemalloc1:amd64 (3.6.0-10, automatic), mariadb-client-10.1:amd64 (10.1.25-1, automatic), mariadb-server:amd64 (10.1.25-1), mariadb-client-core-10.1:amd64 (10.1.25-1, automatic), socat:amd64 (1.7.3.2-1, automatic)
+End-Date: 2017-11-20  20:39:00
+
+Start-Date: 2017-11-22  09:51:03
+Commandline: apt-get upgrade
+Upgrade: apport:amd64 (2.20.7-0ubuntu3.4, 2.20.7-0ubuntu3.5), python3-apport:amd64 (2.20.7-0ubuntu3.4, 2.20.7-0ubuntu3.5), python3-problem-report:amd64 (2.20.7-0ubuntu3.4, 2.20.7-0ubuntu3.5), lxcfs:amd64 (2.0.7-0ubuntu5, 2.0.8-0ubuntu1~17.10.2)
+End-Date: 2017-11-22  09:51:07
+
+Start-Date: 2017-11-22  09:57:36
+Commandline: apt-get install git-all
+Install: libpackage-stash-perl:amd64 (0.37-1, automatic), libjson-glib-1.0-0:amd64 (1.2.8-1, automatic), libsoup-gnome2.4-1:amd64 (2.60.1-1, automatic), libcroco3:amd64 (0.6.12-1, automatic), libwebp6:amd64 (0.6.0-3, automatic), libhttp-message-perl:amd64 (6.11-1, automatic), git-gui:amd64 (1:2.14.1-1ubuntu4, automatic), libpangoft2-1.0-0:amd64 (1.40.12-1, automatic), libwww-robotrules-perl:amd64 (6.01-1, automatic), glib-networking-services:amd64 (2.54.0-1, automatic), libencode-locale-perl:amd64 (1.05-1, automatic), libcups2:amd64 (2.2.4-7ubuntu3, automatic), libmodule-runtime-perl:amd64 (0.014-2, automatic), libserf-1-1:amd64 (1.3.9-3, automatic), libdrm-nouveau2:amd64 (2.4.83-1, automatic), liblockfile-bin:amd64 (1.14-1, automatic), libparams-validate-perl:amd64 (1.29-1, automatic), libnet-ssleay-perl:amd64 (1.80-1build1, automatic), tk:amd64 (8.6.0+9, automatic), libxcb-xfixes0:amd64 (1.12-1ubuntu1, automatic), libmediawiki-api-perl:amd64 (0.41-1, automatic), libgdk-pixbuf2.0-0:amd64 (2.36.11-1, automatic), libproxy1v5:amd64 (0.4.14-3, automatic), liblcms2-2:amd64 (2.7-1ubuntu1, automatic), dconf-service:amd64 (0.26.0-2, automatic), libcairo-gobject2:amd64 (1.14.10-1ubuntu1, automatic), libm17n-0:amd64 (1.7.0-3, automatic), libdatetime-perl:amd64 (2:1.43-1, automatic), libdata-optlist-perl:amd64 (0.110-1, automatic), libtry-tiny-perl:amd64 (0.28-1, automatic), libjson-perl:amd64 (2.94-1, automatic), glib-networking:amd64 (2.54.0-1, automatic), libgtk-3-common:amd64 (3.22.25-0ubuntu0.1, automatic), libhttp-negotiate-perl:amd64 (6.00-2, automatic), libpciaccess0:amd64 (0.13.4-1ubuntu1, automatic), libxcb-present0:amd64 (1.12-1ubuntu1, automatic), libgtk-3-0:amd64 (3.22.25-0ubuntu0.1, automatic), libgd3:amd64 (2.2.5-3, automatic), libvariable-magic-perl:amd64 (0.61-1build1, automatic), libtcl8.6:amd64 (8.6.7+dfsg-1, automatic), libcapnp-0.5.3:amd64 (0.5.3-2ubuntu2, automatic), libglapi-mesa:amd64 (17.2.2-0ubuntu1, automatic), libpixman-1-0:amd64 (0.34.0-1, automatic), libasound2-data:amd64 (1.1.3-5, automatic), libyaml-perl:amd64 (1.21-1, automatic), librsvg2-common:amd64 (2.40.18-1, automatic), libxrender1:amd64 (1:0.9.10-1, automatic), libmagickwand-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu2, automatic), cvs:amd64 (2:1.12.13+real-24, automatic), libb-hooks-endofscope-perl:amd64 (0.21-1, automatic), humanity-icon-theme:amd64 (0.6.13, automatic), libalgorithm-c3-perl:amd64 (0.10-1, automatic), libexception-class-perl:amd64 (1.42-1, automatic), libavahi-common-data:amd64 (0.6.32-1ubuntu1, automatic), libhttp-date-perl:amd64 (6.02-1, automatic), dconf-gsettings-backend:amd64 (0.26.0-2, automatic), libavahi-common3:amd64 (0.6.32-1ubuntu1, automatic), liblwp-mediatypes-perl:amd64 (6.02-1, automatic), libspecio-perl:amd64 (0.40-1, automatic), libclass-singleton-perl:amd64 (1.5-1, automatic), libcgi-pm-perl:amd64 (4.36-1, automatic), libxcursor1:amd64 (1:1.1.14-3, automatic), git-svn:amd64 (1:2.14.1-1ubuntu4, automatic), libmodule-implementation-perl:amd64 (0.09-1, automatic), libthai-data:amd64 (0.1.26-3, automatic), libsub-quote-perl:amd64 (2.004000-1, automatic), libegl1-mesa:amd64 (17.2.2-0ubuntu1, automatic), libxcb-shm0:amd64 (1.12-1ubuntu1, automatic), libepoxy0:amd64 (1.3.1-3, automatic), libsub-identify-perl:amd64 (0.12-2build3, automatic), gsettings-desktop-schemas:amd64 (3.24.1-1ubuntu1, automatic), libsub-exporter-perl:amd64 (0.986-1, automatic), libdatetime-format-builder-perl:amd64 (0.8100-1, automatic), libxcb-render0:amd64 (1.12-1ubuntu1, automatic), libwww-perl:amd64 (6.15-2, automatic), libmircore1:amd64 (0.28.0+17.10.20171011.1-0ubuntu1, automatic), libparams-util-perl:amd64 (1.07-3build3, automatic), libio-html-perl:amd64 (1.001-1, automatic), libterm-readkey-perl:amd64 (2.37-1build1, automatic), fontconfig-config:amd64 (2.11.94-0ubuntu2, automatic), libnet-http-perl:amd64 (6.16-1, automatic), libsvn1:amd64 (1.9.7-2ubuntu1, automatic), libsub-install-perl:amd64 (0.928-1, automatic), glib-networking-common:amd64 (2.54.0-1, automatic), libsoup2.4-1:amd64 (2.60.1-1, automatic), libio-socket-ssl-perl:amd64 (2.050-1, automatic), libltdl7:amd64 (2.4.6-2, automatic), libgbm1:amd64 (17.2.2-0ubuntu1, automatic), libxshmfence1:amd64 (1.2-1, automatic), libclass-inspector-perl:amd64 (1.31-1, automatic), libsm6:amd64 (2:1.2.2-1, automatic), emacs25-bin-common:amd64 (25.2+1-6, automatic), libwayland-client0:amd64 (1.14.0-1, automatic), libdatetime-format-strptime-perl:amd64 (1.7400-1, automatic), libfile-sharedir-perl:amd64 (1.102-2, automatic), libdrm-amdgpu1:amd64 (2.4.83-1, automatic), gitk:amd64 (1:2.14.1-1ubuntu4, automatic), libllvm5.0:amd64 (1:5.0-3, automatic), emacs25-common:amd64 (25.2+1-6, automatic), liblqr-1-0:amd64 (0.4.2-2, automatic), libhtml-tagset-perl:amd64 (3.20-3, automatic), fontconfig:amd64 (2.11.94-0ubuntu2, automatic), libparams-classify-perl:amd64 (0.013-8build1, automatic), libtiff5:amd64 (4.0.8-5, automatic), libclass-method-modifiers-perl:amd64 (2.12-1, automatic), libotf0:amd64 (0.9.13-3build1, automatic), libfile-listing-perl:amd64 (6.04-1, automatic), libatk1.0-0:amd64 (2.26.0-2ubuntu1, automatic), libsub-name-perl:amd64 (0.21-1build1, automatic), libxcomposite1:amd64 (1:0.4.4-2, automatic), adwaita-icon-theme:amd64 (3.26.0-0ubuntu2, automatic), libpangocairo-1.0-0:amd64 (1.40.12-1, automatic), libdatetime-timezone-perl:amd64 (1:2.13-1+2017b, automatic), libsvn-perl:amd64 (1.9.7-2ubuntu1, automatic), libmirprotobuf3:amd64 (0.28.0+17.10.20171011.1-0ubuntu1, automatic), liblwp-protocol-https-perl:amd64 (6.07-2, automatic), libatspi2.0-0:amd64 (2.26.0-2, automatic), m17n-db:amd64 (1.7.0-2, automatic), libprotobuf-lite10:amd64 (3.0.0-9ubuntu5, automatic), librsvg2-2:amd64 (2.40.18-1, automatic), libxi6:amd64 (2:1.7.9-1, automatic), librole-tiny-perl:amd64 (2.000005-1, automatic), libxt6:amd64 (1:1.1.5-1, automatic), libmirclient9:amd64 (0.28.0+17.10.20171011.1-0ubuntu1, automatic), cvsps:amd64 (2.1-8, automatic), libgif7:amd64 (5.1.4-1, automatic), libxinerama1:amd64 (2:1.1.3-1, automatic), tcl:amd64 (8.6.0+9, automatic), gitweb:amd64 (1:2.14.1-1ubuntu4, automatic), git-mediawiki:amd64 (1:2.14.1-1ubuntu4, automatic), libhtml-tree-perl:amd64 (5.03-2, automatic), libdatetime-format-iso8601-perl:amd64 (0.08-2, automatic), libwayland-egl1-mesa:amd64 (17.2.2-0ubuntu1, automatic), fonts-dejavu-core:amd64 (2.37-1, automatic), libnamespace-clean-perl:amd64 (0.27-1, automatic), libxft2:amd64 (2.3.2-1, automatic), perl-openssl-defaults:amd64 (3, automatic), tk8.6:amd64 (8.6.7-1ubuntu1, automatic), libjson-glib-1.0-common:amd64 (1.2.8-1, automatic), libxrandr2:amd64 (2:1.5.1-1, automatic), libdatetime-locale-perl:amd64 (1:1.16-1, automatic), libjpeg8:amd64 (8c-2ubuntu8, automatic), tcl8.6:amd64 (8.6.7+dfsg-1, automatic), libcolord2:amd64 (1.3.3-2build1, automatic), libgomp1:amd64 (7.2.0-8ubuntu3, automatic), hicolor-icon-theme:amd64 (0.17-1, automatic), libhttp-cookies-perl:amd64 (6.01-1, automatic), libxfixes3:amd64 (1:5.0.3-1, automatic), libthai0:amd64 (0.1.26-3, automatic), git-email:amd64 (1:2.14.1-1ubuntu4, automatic), emacsen-common:amd64 (2.0.8, automatic), libdevel-stacktrace-perl:amd64 (2.0200-1, automatic), libfontconfig1:amd64 (2.11.94-0ubuntu2, automatic), libgl1-mesa-dri:amd64 (17.2.2-0ubuntu1, automatic), libclass-factory-util-perl:amd64 (1.7-3, automatic), libgdk-pixbuf2.0-common:amd64 (2.36.11-1, automatic), libmagickcore-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu2, automatic), libboost-filesystem1.62.0:amd64 (1.62.0+dfsg-4build3, automatic), libasound2:amd64 (1.1.3-5, automatic), libgraphite2-3:amd64 (1.3.10-2, automatic), libfftw3-double3:amd64 (3.3.6p2-1, automatic), libjpeg-turbo8:amd64 (1.5.2-0ubuntu5, automatic), emacs:amd64 (47.0, automatic), libpackage-deprecationmanager-perl:amd64 (0.17-1, automatic), libxdamage1:amd64 (1:1.1.4-3, automatic), librest-0.7-0:amd64 (0.8.0-2, automatic), libatk-bridge2.0-0:amd64 (2.26.0-1ubuntu1, automatic), libtimedate-perl:amd64 (2.3000-2, automatic), libjbig0:amd64 (2.1-3.1, automatic), libdrm-intel1:amd64 (2.4.83-1, automatic), libclass-data-inheritable-perl:amd64 (0.08-2, automatic), x11-common:amd64 (1:7.7+19ubuntu3, automatic), gtk-update-icon-cache:amd64 (3.22.25-0ubuntu0.1, automatic), libdrm-radeon1:amd64 (2.4.83-1, automatic), libxpm4:amd64 (1:3.5.12-1, automatic), libdbd-sqlite3-perl:amd64 (1.54-2, automatic), liblockfile1:amd64 (1.14-1, automatic), libatk1.0-data:amd64 (2.26.0-2ubuntu1, automatic), libeval-closure-perl:amd64 (0.14-1, automatic), libharfbuzz0b:amd64 (1.4.2-1, automatic), libsub-exporter-progressive-perl:amd64 (0.001013-1, automatic), libice6:amd64 (2:1.0.9-2, automatic), libcairo2:amd64 (1.14.10-1ubuntu1, automatic), libboost-system1.62.0:amd64 (1.62.0+dfsg-4build3, automatic), libavahi-client3:amd64 (0.6.32-1ubuntu1, automatic), libtk8.6:amd64 (8.6.7-1ubuntu1, automatic), libpango-1.0-0:amd64 (1.40.12-1, automatic), libtest-fatal-perl:amd64 (0.014-1, automatic), libxss1:amd64 (1:1.2.2-1, automatic), libxcb-dri2-0:amd64 (1.12-1ubuntu1, automatic), libxkbcommon0:amd64 (0.7.1-2, automatic), git-all:amd64 (1:2.14.1-1ubuntu4), libhtml-parser-perl:amd64 (3.72-3build1, automatic), libsensors4:amd64 (1:3.4.0-4, automatic), libparams-validationcompiler-perl:amd64 (0.24-1, automatic), liburi-perl:amd64 (1.72-1, automatic), ubuntu-mono:amd64 (16.10+17.10.20171012.1-0ubuntu1, automatic), libclass-c3-perl:amd64 (0.32-1, automatic), libxcb-dri3-0:amd64 (1.12-1ubuntu1, automatic), libdconf1:amd64 (0.26.0-2, automatic), libmircommon7:amd64 (0.28.0+17.10.20171011.1-0ubuntu1, automatic), libwayland-server0:amd64 (1.14.0-1, automatic), git-cvs:amd64 (1:2.14.1-1ubuntu4, automatic), libx11-xcb1:amd64 (2:1.6.4-3, automatic), libmro-compat-perl:amd64 (0.12-1, automatic), emacs25:amd64 (25.2+1-6, automatic), libxcb-sync1:amd64 (1.12-1ubuntu1, automatic), libnamespace-autoclean-perl:amd64 (0.28-1, automatic), git-doc:amd64 (1:2.14.1-1ubuntu4, automatic), imagemagick-6-common:amd64 (8:6.9.7.4+dfsg-16ubuntu2, automatic), libdatrie1:amd64 (0.2.10-5, automatic), git-el:amd64 (1:2.14.1-1ubuntu4, automatic), libwayland-cursor0:amd64 (1.14.0-1, automatic)
+End-Date: 2017-11-22  09:58:03
+
+Start-Date: 2017-11-23  18:56:53
+Commandline: apt-get remove git
+Remove: git-gui:amd64 (1:2.14.1-1ubuntu4), git-svn:amd64 (1:2.14.1-1ubuntu4), git:amd64 (1:2.14.1-1ubuntu4), ubuntu-server:amd64 (1.404.1), gitk:amd64 (1:2.14.1-1ubuntu4), gitweb:amd64 (1:2.14.1-1ubuntu4), git-mediawiki:amd64 (1:2.14.1-1ubuntu4), git-email:amd64 (1:2.14.1-1ubuntu4), git-all:amd64 (1:2.14.1-1ubuntu4), git-cvs:amd64 (1:2.14.1-1ubuntu4), git-el:amd64 (1:2.14.1-1ubuntu4)
+End-Date: 2017-11-23  18:56:54
+
+Start-Date: 2017-11-23  18:57:56
+Commandline: apt autoremove
+Remove: libpackage-stash-perl:amd64 (0.37-1), libjson-glib-1.0-0:amd64 (1.2.8-1), libsoup-gnome2.4-1:amd64 (2.60.1-1), libcroco3:amd64 (0.6.12-1), libwebp6:amd64 (0.6.0-3), libhttp-message-perl:amd64 (6.11-1), libpangoft2-1.0-0:amd64 (1.40.12-1), libwww-robotrules-perl:amd64 (6.01-1), glib-networking-services:amd64 (2.54.0-1), libencode-locale-perl:amd64 (1.05-1), libcups2:amd64 (2.2.4-7ubuntu3), libmodule-runtime-perl:amd64 (0.014-2), libserf-1-1:amd64 (1.3.9-3), libdrm-nouveau2:amd64 (2.4.83-1), liblockfile-bin:amd64 (1.14-1), libparams-validate-perl:amd64 (1.29-1), libnet-ssleay-perl:amd64 (1.80-1build1), tk:amd64 (8.6.0+9), libxcb-xfixes0:amd64 (1.12-1ubuntu1), libmediawiki-api-perl:amd64 (0.41-1), libgdk-pixbuf2.0-0:amd64 (2.36.11-1), libproxy1v5:amd64 (0.4.14-3), liblcms2-2:amd64 (2.7-1ubuntu1), dconf-service:amd64 (0.26.0-2), libcairo-gobject2:amd64 (1.14.10-1ubuntu1), libm17n-0:amd64 (1.7.0-3), libdatetime-perl:amd64 (2:1.43-1), libdata-optlist-perl:amd64 (0.110-1), libtry-tiny-perl:amd64 (0.28-1), libjson-perl:amd64 (2.94-1), glib-networking:amd64 (2.54.0-1), libgtk-3-common:amd64 (3.22.25-0ubuntu0.1), libhttp-negotiate-perl:amd64 (6.00-2), libpciaccess0:amd64 (0.13.4-1ubuntu1), libxcb-present0:amd64 (1.12-1ubuntu1), libgtk-3-0:amd64 (3.22.25-0ubuntu0.1), libgd3:amd64 (2.2.5-3), libvariable-magic-perl:amd64 (0.61-1build1), libtcl8.6:amd64 (8.6.7+dfsg-1), libcapnp-0.5.3:amd64 (0.5.3-2ubuntu2), libglapi-mesa:amd64 (17.2.2-0ubuntu1), libpixman-1-0:amd64 (0.34.0-1), libasound2-data:amd64 (1.1.3-5), libyaml-perl:amd64 (1.21-1), librsvg2-common:amd64 (2.40.18-1), libxrender1:amd64 (1:0.9.10-1), libmagickwand-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu2), cvs:amd64 (2:1.12.13+real-24), libb-hooks-endofscope-perl:amd64 (0.21-1), humanity-icon-theme:amd64 (0.6.13), libalgorithm-c3-perl:amd64 (0.10-1), libexception-class-perl:amd64 (1.42-1), libavahi-common-data:amd64 (0.6.32-1ubuntu1), libhttp-date-perl:amd64 (6.02-1), dconf-gsettings-backend:amd64 (0.26.0-2), libavahi-common3:amd64 (0.6.32-1ubuntu1), liblwp-mediatypes-perl:amd64 (6.02-1), libspecio-perl:amd64 (0.40-1), libclass-singleton-perl:amd64 (1.5-1), libcgi-pm-perl:amd64 (4.36-1), libxcursor1:amd64 (1:1.1.14-3), libmodule-implementation-perl:amd64 (0.09-1), libthai-data:amd64 (0.1.26-3), libsub-quote-perl:amd64 (2.004000-1), libegl1-mesa:amd64 (17.2.2-0ubuntu1), libxcb-shm0:amd64 (1.12-1ubuntu1), libepoxy0:amd64 (1.3.1-3), libsub-identify-perl:amd64 (0.12-2build3), gsettings-desktop-schemas:amd64 (3.24.1-1ubuntu1), libsub-exporter-perl:amd64 (0.986-1), libdatetime-format-builder-perl:amd64 (0.8100-1), libxcb-render0:amd64 (1.12-1ubuntu1), libwww-perl:amd64 (6.15-2), libmircore1:amd64 (0.28.0+17.10.20171011.1-0ubuntu1), libparams-util-perl:amd64 (1.07-3build3), libio-html-perl:amd64 (1.001-1), fontconfig-config:amd64 (2.11.94-0ubuntu2), libnet-http-perl:amd64 (6.16-1), libsvn1:amd64 (1.9.7-2ubuntu1), libsub-install-perl:amd64 (0.928-1), glib-networking-common:amd64 (2.54.0-1), libsoup2.4-1:amd64 (2.60.1-1), libio-socket-ssl-perl:amd64 (2.050-1), libltdl7:amd64 (2.4.6-2), libgbm1:amd64 (17.2.2-0ubuntu1), libxshmfence1:amd64 (1.2-1), libclass-inspector-perl:amd64 (1.31-1), libsm6:amd64 (2:1.2.2-1), emacs25-bin-common:amd64 (25.2+1-6), libwayland-client0:amd64 (1.14.0-1), libdatetime-format-strptime-perl:amd64 (1.7400-1), libfile-sharedir-perl:amd64 (1.102-2), libdrm-amdgpu1:amd64 (2.4.83-1), libllvm5.0:amd64 (1:5.0-3), emacs25-common:amd64 (25.2+1-6), liblqr-1-0:amd64 (0.4.2-2), libhtml-tagset-perl:amd64 (3.20-3), fontconfig:amd64 (2.11.94-0ubuntu2), libparams-classify-perl:amd64 (0.013-8build1), libtiff5:amd64 (4.0.8-5), libclass-method-modifiers-perl:amd64 (2.12-1), libotf0:amd64 (0.9.13-3build1), libfile-listing-perl:amd64 (6.04-1), libatk1.0-0:amd64 (2.26.0-2ubuntu1), libsub-name-perl:amd64 (0.21-1build1), libxcomposite1:amd64 (1:0.4.4-2), adwaita-icon-theme:amd64 (3.26.0-0ubuntu2), libpangocairo-1.0-0:amd64 (1.40.12-1), libdatetime-timezone-perl:amd64 (1:2.13-1+2017b), libsvn-perl:amd64 (1.9.7-2ubuntu1), libmirprotobuf3:amd64 (0.28.0+17.10.20171011.1-0ubuntu1), liblwp-protocol-https-perl:amd64 (6.07-2), libatspi2.0-0:amd64 (2.26.0-2), m17n-db:amd64 (1.7.0-2), libprotobuf-lite10:amd64 (3.0.0-9ubuntu5), librsvg2-2:amd64 (2.40.18-1), libxi6:amd64 (2:1.7.9-1), librole-tiny-perl:amd64 (2.000005-1), libxt6:amd64 (1:1.1.5-1), libmirclient9:amd64 (0.28.0+17.10.20171011.1-0ubuntu1), cvsps:amd64 (2.1-8), libgif7:amd64 (5.1.4-1), libxinerama1:amd64 (2:1.1.3-1), tcl:amd64 (8.6.0+9), libhtml-tree-perl:amd64 (5.03-2), libdatetime-format-iso8601-perl:amd64 (0.08-2), libwayland-egl1-mesa:amd64 (17.2.2-0ubuntu1), fonts-dejavu-core:amd64 (2.37-1), libnamespace-clean-perl:amd64 (0.27-1), libxft2:amd64 (2.3.2-1), perl-openssl-defaults:amd64 (3), tk8.6:amd64 (8.6.7-1ubuntu1), libjson-glib-1.0-common:amd64 (1.2.8-1), libxrandr2:amd64 (2:1.5.1-1), libdatetime-locale-perl:amd64 (1:1.16-1), libjpeg8:amd64 (8c-2ubuntu8), tcl8.6:amd64 (8.6.7+dfsg-1), libcolord2:amd64 (1.3.3-2build1), libgomp1:amd64 (7.2.0-8ubuntu3), hicolor-icon-theme:amd64 (0.17-1), libhttp-cookies-perl:amd64 (6.01-1), libxfixes3:amd64 (1:5.0.3-1), libthai0:amd64 (0.1.26-3), emacsen-common:amd64 (2.0.8), libdevel-stacktrace-perl:amd64 (2.0200-1), libfontconfig1:amd64 (2.11.94-0ubuntu2), libgl1-mesa-dri:amd64 (17.2.2-0ubuntu1), libclass-factory-util-perl:amd64 (1.7-3), libgdk-pixbuf2.0-common:amd64 (2.36.11-1), libmagickcore-6.q16-3:amd64 (8:6.9.7.4+dfsg-16ubuntu2), libboost-filesystem1.62.0:amd64 (1.62.0+dfsg-4build3), libasound2:amd64 (1.1.3-5), libgraphite2-3:amd64 (1.3.10-2), libfftw3-double3:amd64 (3.3.6p2-1), libjpeg-turbo8:amd64 (1.5.2-0ubuntu5), emacs:amd64 (47.0), libpackage-deprecationmanager-perl:amd64 (0.17-1), libxdamage1:amd64 (1:1.1.4-3), librest-0.7-0:amd64 (0.8.0-2), libatk-bridge2.0-0:amd64 (2.26.0-1ubuntu1), libtimedate-perl:amd64 (2.3000-2), libjbig0:amd64 (2.1-3.1), libdrm-intel1:amd64 (2.4.83-1), libclass-data-inheritable-perl:amd64 (0.08-2), x11-common:amd64 (1:7.7+19ubuntu3), gtk-update-icon-cache:amd64 (3.22.25-0ubuntu0.1), libdrm-radeon1:amd64 (2.4.83-1), libxpm4:amd64 (1:3.5.12-1), libdbd-sqlite3-perl:amd64 (1.54-2), liblockfile1:amd64 (1.14-1), libatk1.0-data:amd64 (2.26.0-2ubuntu1), libeval-closure-perl:amd64 (0.14-1), libharfbuzz0b:amd64 (1.4.2-1), libsub-exporter-progressive-perl:amd64 (0.001013-1), libice6:amd64 (2:1.0.9-2), libcairo2:amd64 (1.14.10-1ubuntu1), libboost-system1.62.0:amd64 (1.62.0+dfsg-4build3), libavahi-client3:amd64 (0.6.32-1ubuntu1), libtk8.6:amd64 (8.6.7-1ubuntu1), libpango-1.0-0:amd64 (1.40.12-1), libtest-fatal-perl:amd64 (0.014-1), libxss1:amd64 (1:1.2.2-1), libxcb-dri2-0:amd64 (1.12-1ubuntu1), libxkbcommon0:amd64 (0.7.1-2), libhtml-parser-perl:amd64 (3.72-3build1), libsensors4:amd64 (1:3.4.0-4), libparams-validationcompiler-perl:amd64 (0.24-1), liburi-perl:amd64 (1.72-1), ubuntu-mono:amd64 (16.10+17.10.20171012.1-0ubuntu1), libclass-c3-perl:amd64 (0.32-1), libxcb-dri3-0:amd64 (1.12-1ubuntu1), libdconf1:amd64 (0.26.0-2), libmircommon7:amd64 (0.28.0+17.10.20171011.1-0ubuntu1), libwayland-server0:amd64 (1.14.0-1), libx11-xcb1:amd64 (2:1.6.4-3), libmro-compat-perl:amd64 (0.12-1), emacs25:amd64 (25.2+1-6), libxcb-sync1:amd64 (1.12-1ubuntu1), libnamespace-autoclean-perl:amd64 (0.28-1), git-doc:amd64 (1:2.14.1-1ubuntu4), imagemagick-6-common:amd64 (8:6.9.7.4+dfsg-16ubuntu2), libdatrie1:amd64 (0.2.10-5), libwayland-cursor0:amd64 (1.14.0-1)
+End-Date: 2017-11-23  18:58:02
+
+Start-Date: 2017-11-23  18:58:58
+Commandline: apt-get install git
+Install: git:amd64 (1:2.14.1-1ubuntu4)
+End-Date: 2017-11-23  18:58:59
+
+Start-Date: 2017-11-25  22:09:00
+Commandline: apt-get remove git
+Remove: git:amd64 (1:2.14.1-1ubuntu4)
+End-Date: 2017-11-25  22:09:01
+
+Start-Date: 2017-11-25  22:12:29
+Commandline: apt-get install git-core
+Install: git:amd64 (1:2.14.1-1ubuntu4, automatic), git-core:amd64 (1:2.14.1-1ubuntu4)
+End-Date: 2017-11-25  22:12:30
+
+Start-Date: 2017-11-27  13:53:49
+Commandline: apt install -y mariadb-server
+Install: iproute:amd64 (1:4.9.0-1ubuntu2, automatic), libmysqlclient18:amd64 (10.1.25+maria-1~xenial, automatic), libmysqlclient20:amd64 (5.7.20-0ubuntu0.17.10.1, automatic), libdbd-mysql-perl:amd64 (4.041-2build1, automatic), libmariadbclient18:amd64 (10.1.25+maria-1~xenial, automatic)
+Upgrade: mariadb-common:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-server-core-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-server-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-client-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-server:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-client-core-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  13:53:55
+
+Start-Date: 2017-11-27  13:55:17
+Commandline: apt --fix-broken install
+Upgrade: mariadb-server-core-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-server-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-client-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-client-core-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  13:55:21
+
+Start-Date: 2017-11-27  13:55:33
+Commandline: apt --fix-broken install
+Upgrade: mariadb-server-core-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-server-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-client-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial), mariadb-client-core-10.1:amd64 (10.1.25-1, 10.1.25+maria-1~xenial)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  13:55:37
+
+Start-Date: 2017-11-27  13:55:53
+Commandline: apt remove -y mariadb-server
+Remove: mariadb-server:amd64 (10.1.25+maria-1~xenial)
+End-Date: 2017-11-27  13:55:53
+
+Start-Date: 2017-11-27  13:56:11
+Commandline: apt autoremove
+Remove: iproute:amd64 (1:4.9.0-1ubuntu2), mariadb-common:amd64 (10.1.25+maria-1~xenial), libdbi-perl:amd64 (1.637-1), mariadb-server-core-10.1:amd64 (10.1.25-1), libaio1:amd64 (0.3.110-4), libterm-readkey-perl:amd64 (2.37-1build1), mariadb-server-10.1:amd64 (10.1.25-1), galera-3:amd64 (25.3.20-1), mysql-common:amd64 (5.8+1.0.2ubuntu1), libjemalloc1:amd64 (3.6.0-10), mariadb-client-10.1:amd64 (10.1.25-1), libmysqlclient18:amd64 (10.1.25+maria-1~xenial), libmysqlclient20:amd64 (5.7.20-0ubuntu0.17.10.1), mariadb-client-core-10.1:amd64 (10.1.25-1), libdbd-mysql-perl:amd64 (4.041-2build1), libmariadbclient18:amd64 (10.1.25+maria-1~xenial), socat:amd64 (1.7.3.2-1)
+End-Date: 2017-11-27  13:56:14
+
+Start-Date: 2017-11-27  13:59:08
+Commandline: apt-get install mysql-server
+Install: mysql-client-5.7:amd64 (5.7.20-0ubuntu0.17.10.1, automatic), libevent-core-2.1-6:amd64 (2.1.8-stable-4, automatic), mysql-server-5.7:amd64 (5.7.20-0ubuntu0.17.10.1, automatic), mysql-server:amd64 (5.7.20-0ubuntu0.17.10.1), libaio1:amd64 (0.3.110-4, automatic), mysql-client-core-5.7:amd64 (5.7.20-0ubuntu0.17.10.1, automatic), mysql-common:amd64 (10.1.25+maria-1~xenial, automatic), mysql-server-core-5.7:amd64 (5.7.20-0ubuntu0.17.10.1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  13:59:11
+
+Start-Date: 2017-11-27  13:59:33
+Commandline: apt --fix-broken install
+Install: mysql-server-5.7:amd64 (5.7.20-0ubuntu0.17.10.1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  13:59:33
+
+Start-Date: 2017-11-27  14:00:27
+Commandline: apt-get install -f
+Install: mysql-server-5.7:amd64 (5.7.20-0ubuntu0.17.10.1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  14:00:27
+
+Start-Date: 2017-11-27  14:01:18
+Commandline: apt remove mysql-server
+Remove: mysql-server:amd64 (5.7.20-0ubuntu0.17.10.1)
+End-Date: 2017-11-27  14:01:18
+
+Start-Date: 2017-11-27  14:01:30
+Commandline: apt autoremove
+Remove: mysql-client-5.7:amd64 (5.7.20-0ubuntu0.17.10.1), libevent-core-2.1-6:amd64 (2.1.8-stable-4), libaio1:amd64 (0.3.110-4), mysql-client-core-5.7:amd64 (5.7.20-0ubuntu0.17.10.1), mysql-common:amd64 (10.1.25+maria-1~xenial), mysql-server-core-5.7:amd64 (5.7.20-0ubuntu0.17.10.1)
+End-Date: 2017-11-27  14:01:30
+
+Start-Date: 2017-11-27  14:07:00
+Commandline: apt-get install mysql-server -y
+Install: mysql-server:amd64 (5.7.20-1ubuntu17.10), mysql-client:amd64 (5.7.20-1ubuntu17.10, automatic), libmecab2:amd64 (0.996-3.1, automatic), libaio1:amd64 (0.3.110-4, automatic), mysql-community-server:amd64 (5.7.20-1ubuntu17.10, automatic), mysql-community-client:amd64 (5.7.20-1ubuntu17.10, automatic), mysql-common:amd64 (10.1.25+maria-1~xenial, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  14:07:02
+
+Start-Date: 2017-11-27  14:07:35
+Commandline: apt-get install mysql-server
+Upgrade: mysql-community-server:amd64 (5.7.20-1ubuntu17.10, 5.7.20-1ubuntu17.10)
+End-Date: 2017-11-27  14:07:43
+
+Start-Date: 2017-11-27  14:13:58
+Commandline: apt remove mysql-server
+Remove: mysql-server:amd64 (5.7.20-1ubuntu17.10)
+End-Date: 2017-11-27  14:13:59
+
+Start-Date: 2017-11-27  14:14:08
+Commandline: apt autoremove
+Remove: mysql-client:amd64 (5.7.20-1ubuntu17.10), libmecab2:amd64 (0.996-3.1), libaio1:amd64 (0.3.110-4), mysql-community-server:amd64 (5.7.20-1ubuntu17.10), mysql-community-client:amd64 (5.7.20-1ubuntu17.10), mysql-common:amd64 (10.1.25+maria-1~xenial)
+End-Date: 2017-11-27  14:14:09
+
+Start-Date: 2017-11-27  14:15:33
+Commandline: apt install -y mariadb-server
+Install: iproute:amd64 (1:4.9.0-1ubuntu2, automatic), mariadb-common:amd64 (10.1.25+maria-1~xenial, automatic), libdbi-perl:amd64 (1.637-1, automatic), mariadb-server-core-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libaio1:amd64 (0.3.110-4, automatic), mariadb-server-10.1:amd64 (10.1.25+maria-1~xenial, automatic), galera-3:amd64 (25.3.20-xenial, automatic), mysql-common:amd64 (10.1.25+maria-1~xenial, automatic), libjemalloc1:amd64 (3.6.0-10, automatic), mariadb-client-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libmysqlclient18:amd64 (10.1.25+maria-1~xenial, automatic), libmysqlclient20:amd64 (5.7.20-1ubuntu17.10, automatic), mariadb-server:amd64 (10.1.25+maria-1~xenial), mariadb-client-core-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libdbd-mysql-perl:amd64 (4.041-2build1, automatic), libmariadbclient18:amd64 (10.1.25+maria-1~xenial, automatic), socat:amd64 (1.7.3.2-1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  14:16:42
+
+Start-Date: 2017-11-27  14:18:18
+Commandline: apt-get upgrade
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  14:19:20
+
+Start-Date: 2017-11-27  14:20:24
+Commandline: apt-get remove --purge mysql*
+Purge: mysql-apt-config:amd64 (0.8.9-1), mariadb-common:amd64 (10.1.25+maria-1~xenial), mariadb-server-core-10.1:amd64 (10.1.25+maria-1~xenial), mariadb-server-10.1:amd64 (10.1.25+maria-1~xenial), mysql-community-server:amd64 (), mysql-community-client:amd64 (), mysql-common:amd64 (10.1.25+maria-1~xenial), mariadb-client-10.1:amd64 (10.1.25+maria-1~xenial), libmysqlclient18:amd64 (10.1.25+maria-1~xenial), libmysqlclient20:amd64 (5.7.20-1ubuntu17.10), mariadb-server:amd64 (10.1.25+maria-1~xenial), mariadb-client-core-10.1:amd64 (10.1.25+maria-1~xenial), libdbd-mysql-perl:amd64 (4.041-2build1), libmariadbclient18:amd64 (10.1.25+maria-1~xenial)
+End-Date: 2017-11-27  14:20:32
+
+Start-Date: 2017-11-27  14:21:16
+Commandline: apt install -y mariadb-server
+Install: mariadb-common:amd64 (10.1.25+maria-1~xenial, automatic), mariadb-server-core-10.1:amd64 (10.1.25+maria-1~xenial, automatic), mariadb-server-10.1:amd64 (10.1.25+maria-1~xenial, automatic), mysql-common:amd64 (10.1.25+maria-1~xenial, automatic), mariadb-client-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libmysqlclient18:amd64 (10.1.25+maria-1~xenial, automatic), libmysqlclient20:amd64 (5.7.20-0ubuntu0.17.10.1, automatic), mariadb-server:amd64 (10.1.25+maria-1~xenial), mariadb-client-core-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libdbd-mysql-perl:amd64 (4.041-2build1, automatic), libmariadbclient18:amd64 (10.1.25+maria-1~xenial, automatic)
+End-Date: 2017-11-27  14:21:46
+
+Start-Date: 2017-11-27  14:33:46
+Commandline: apt install unzip
+Install: unzip:amd64 (6.0-21ubuntu1)
+End-Date: 2017-11-27  14:33:46
+
+Start-Date: 2017-11-27  18:27:18
+Commandline: apt-get install php-mbstring
+Install: php7.1-mbstring:amd64 (7.1.8-1ubuntu1, automatic), php-mbstring:amd64 (1:7.1+54ubuntu1)
+End-Date: 2017-11-27  18:27:18
+
+Start-Date: 2017-11-27  18:27:50
+Commandline: apt-get install php-mysqlnd
+Install: php7.1-mysql:amd64 (7.1.8-1ubuntu1)
+End-Date: 2017-11-27  18:27:51
+
+Start-Date: 2017-11-27  18:30:04
+Commandline: apt-get install php7.1-gd
+Install: libwebp6:amd64 (0.6.0-3, automatic), libgd3:amd64 (2.2.5-3, automatic), fontconfig-config:amd64 (2.11.94-0ubuntu2, automatic), libtiff5:amd64 (4.0.8-5, automatic), fonts-dejavu-core:amd64 (2.37-1, automatic), libjpeg8:amd64 (8c-2ubuntu8, automatic), libfontconfig1:amd64 (2.11.94-0ubuntu2, automatic), libjpeg-turbo8:amd64 (1.5.2-0ubuntu5, automatic), libjbig0:amd64 (2.1-3.1, automatic), libxpm4:amd64 (1:3.5.12-1, automatic), php7.1-gd:amd64 (7.1.8-1ubuntu1)
+End-Date: 2017-11-27  18:30:05
+
+Start-Date: 2017-11-27  19:15:04
+Commandline: apt purge mariadb-server
+Purge: mariadb-server:amd64 (10.1.25+maria-1~xenial)
+End-Date: 2017-11-27  19:15:04
+
+Start-Date: 2017-11-27  19:15:12
+Commandline: apt autoremove
+Remove: iproute:amd64 (1:4.9.0-1ubuntu2), mariadb-common:amd64 (10.1.25+maria-1~xenial), libdbi-perl:amd64 (1.637-1), mariadb-server-core-10.1:amd64 (10.1.25+maria-1~xenial), libaio1:amd64 (0.3.110-4), mariadb-server-10.1:amd64 (10.1.25+maria-1~xenial), galera-3:amd64 (25.3.20-xenial), mysql-common:amd64 (10.1.25+maria-1~xenial), libjemalloc1:amd64 (3.6.0-10), mariadb-client-10.1:amd64 (10.1.25+maria-1~xenial), libmysqlclient18:amd64 (10.1.25+maria-1~xenial), libmysqlclient20:amd64 (5.7.20-0ubuntu0.17.10.1), mariadb-client-core-10.1:amd64 (10.1.25+maria-1~xenial), libdbd-mysql-perl:amd64 (4.041-2build1), libmariadbclient18:amd64 (10.1.25+maria-1~xenial), socat:amd64 (1.7.3.2-1)
+End-Date: 2017-11-27  19:15:15
+
+Start-Date: 2017-11-27  19:18:30
+Commandline: apt-get install mariadb-server
+Install: iproute:amd64 (1:4.9.0-1ubuntu2, automatic), mariadb-common:amd64 (10.1.25+maria-1~xenial, automatic), libdbi-perl:amd64 (1.637-1, automatic), mariadb-server-core-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libaio1:amd64 (0.3.110-4, automatic), mariadb-server-10.1:amd64 (10.1.25+maria-1~xenial, automatic), galera-3:amd64 (25.3.20-xenial, automatic), mysql-common:amd64 (10.1.25+maria-1~xenial, automatic), libjemalloc1:amd64 (3.6.0-10, automatic), mariadb-client-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libmysqlclient18:amd64 (10.1.25+maria-1~xenial, automatic), libmysqlclient20:amd64 (5.7.20-0ubuntu0.17.10.1, automatic), mariadb-server:amd64 (10.1.25+maria-1~xenial), mariadb-client-core-10.1:amd64 (10.1.25+maria-1~xenial, automatic), libdbd-mysql-perl:amd64 (4.041-2build1, automatic), libmariadbclient18:amd64 (10.1.25+maria-1~xenial, automatic), socat:amd64 (1.7.3.2-1, automatic)
+Error: Sub-process /usr/bin/dpkg returned an error code (1)
+End-Date: 2017-11-27  19:18:36
+
+Start-Date: 2017-11-27  19:18:57
+Commandline: apt purge mariadb-server
+Purge: mariadb-server:amd64 (10.1.25+maria-1~xenial)
+End-Date: 2017-11-27  19:18:57
+
+Start-Date: 2017-11-27  19:19:06
+Commandline: apt autoremove
+Remove: iproute:amd64 (1:4.9.0-1ubuntu2), mariadb-common:amd64 (10.1.25+maria-1~xenial), libdbi-perl:amd64 (1.637-1), mariadb-server-core-10.1:amd64 (10.1.25+maria-1~xenial), libaio1:amd64 (0.3.110-4), galera-3:amd64 (25.3.20-xenial), mysql-common:amd64 (10.1.25+maria-1~xenial), libjemalloc1:amd64 (3.6.0-10), mariadb-client-10.1:amd64 (10.1.25+maria-1~xenial), libmysqlclient18:amd64 (10.1.25+maria-1~xenial), libmysqlclient20:amd64 (5.7.20-0ubuntu0.17.10.1), mariadb-client-core-10.1:amd64 (10.1.25+maria-1~xenial), libdbd-mysql-perl:amd64 (4.041-2build1), libmariadbclient18:amd64 (10.1.25+maria-1~xenial), socat:amd64 (1.7.3.2-1)
+End-Date: 2017-11-27  19:19:07
+
+Start-Date: 2017-11-27  22:03:41
+Commandline: apt-get install -y acl curl git software-properties-common unzip zip
+Install: zip:amd64 (3.0-11build1)
+End-Date: 2017-11-27  22:03:41
+
+Start-Date: 2017-11-27  22:04:25
+Commandline: apt-get install -y --force-yes php7.0-cli php-curl php-gd php7.0-zip php7.0-mcrypt php-apcu php-xml php-mbstring php-intl
+Install: php7.1-xml:amd64 (7.1.11-1+ubuntu17.10.1+deb.sury.org+1, automatic), php-gd:amd64 (1:7.1+55+ubuntu17.10.1+deb.sury.org+1), php-xml:amd64 (1:7.1+55+ubuntu17.10.1+deb.sury.org+1), php7.0-cli:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1), libzip4:amd64 (1.1.2-1.1, automatic), php7.0-opcache:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1, automatic), php7.0-common:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1, automatic), libmcrypt4:amd64 (2.5.8-3.3, automatic), php7.1-curl:amd64 (7.1.11-1+ubuntu17.10.1+deb.sury.org+1, automatic), php-curl:amd64 (1:7.1+55+ubuntu17.10.1+deb.sury.org+1), php7.0-json:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1, automatic), php7.0-readline:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1, automatic), php7.0-zip:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1), php7.1-intl:amd64 (7.1.11-1+ubuntu17.10.1+deb.sury.org+1, automatic), php-intl:amd64 (1:7.1+55+ubuntu17.10.1+deb.sury.org+1), php7.0-mcrypt:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1), libssl1.1:amd64 (1.1.0g-2.1+ubuntu17.10.1+deb.sury.org+1, automatic), php-apcu:amd64 (5.1.8+4.0.11-1+ubuntu17.10.1+deb.sury.org+2)
+Upgrade: php7.1-mbstring:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), php7.1-readline:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), php7.1-mysql:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), php7.1-opcache:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), php7.1-json:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), php7.1-cli:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), php7.1-common:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), php-mbstring:amd64 (1:7.1+54ubuntu1, 1:7.1+55+ubuntu17.10.1+deb.sury.org+1), php7.1-gd:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1), libapache2-mod-php7.1:amd64 (7.1.8-1ubuntu1, 7.1.11-1+ubuntu17.10.1+deb.sury.org+1)
+End-Date: 2017-11-27  22:04:48
+
+Start-Date: 2017-11-27  22:27:15
+Commandline: apt purge php7.0-mcrypt
+Purge: php7.0-mcrypt:amd64 (7.0.25-1+ubuntu17.10.1+deb.sury.org+1)
+End-Date: 2017-11-27  22:27:16
+
+Start-Date: 2017-11-27  22:27:26
+Commandline: apt autoremove
+Remove: libmcrypt4:amd64 (2.5.8-3.3)
+End-Date: 2017-11-27  22:27:26
