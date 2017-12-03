@@ -53,6 +53,11 @@ nav {
                 padding-top: 2vh;
                 padding-bottom: 2vh;
             }
+            img:active {
+                -webkit-filter: blur(1px);
+                filter: blur(1px);
+                transition: filter 0.2s ease;
+            }
             div {
                 float: right;
                 padding-right: 5vw;
@@ -63,6 +68,20 @@ nav {
             font-family: 'Rubik',
             sans-serif;
             color: white;
+        }
+    }
+}
+
+@media (min-width: 1025px){
+    nav {
+        ul {
+            li {
+                img:hover {
+                    -webkit-filter: blur(1px);
+                    filter: blur(1px);
+                    transition: filter 0.2s ease;
+                }
+            }
         }
     }
 }
