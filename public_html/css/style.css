@@ -58,6 +58,16 @@ nav {
     -webkit-filter: blur(1px);
     filter: blur(1px);
     transition: filter 0.2s ease; } }
+footer {
+  height: 4vh;
+  overflow-y: hidden; }
+  footer p {
+    color: white;
+    font-size: 0.5em;
+    text-align: right;
+    padding-right: 5vw;
+    line-height: 2vh; }
+
 #card1 {
   background-color: white;
   width: 100%;
