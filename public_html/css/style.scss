@@ -89,13 +89,13 @@ nav {
 footer {
     height: 4vh;
     overflow-y: hidden;
-    p{
+    p {
         color: white;
         font-size: 0.5em;
         text-align: right;
         padding-right: 5vw;
         line-height: 2vh;
-}
+    }
 }
 
 #card1 {
@@ -130,4 +130,9 @@ footer {
     padding-left: 19vh;
     padding-top: 2vh;
     padding-bottom: 2vh;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
 }
