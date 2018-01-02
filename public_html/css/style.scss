@@ -9,7 +9,7 @@ $black: #212121;
 }
 
 html {
-    font-size: calc(112.5% + 0.5vmin)
+    font-size: calc(110% + 0.5vmin)
 }
 
 body {
@@ -169,7 +169,7 @@ footer {
         padding: 30px;
         position: relative;
         border-style: solid;
-            border-width: 1px;
+        border-width: 1px;
 
         background-color: $black;
         color: white;
