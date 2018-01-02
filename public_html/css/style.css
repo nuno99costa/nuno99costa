@@ -123,7 +123,8 @@ footer {
     width: 100%;
     padding: 30px;
     position: relative;
-    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
     background-color: #212121;
     color: white;
     font-size: 1.5em;
