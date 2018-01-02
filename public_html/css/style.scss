@@ -137,14 +137,17 @@ footer {
 
 //Grid Container
 .cards {
-    padding: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-flow: row wrap;
 }
 
 //Cards
 .card {
-    margin: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
     width: calc((100% / 3) - 30px);
     transition: all 0.2s ease-in-out; //media queries for stacking cards
     @media screen and (max-width: 991px) {
