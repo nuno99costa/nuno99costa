@@ -238,19 +238,6 @@ footer {
             opacity: 1;
         }
     }
-
-    &.is-inactive {
-        .card__inner {
-            pointer-events: none;
-            opacity: 0.5;
-        }
-
-        &:hover {
-            .card__inner {
-                background-color: $black;
-            }
-        }
-    }
 }
 
 
