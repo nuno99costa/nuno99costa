@@ -122,7 +122,8 @@ footer {
     background-color: white;
     color: #212121;
     border-style: solid;
-    border-width: 1px; }
+    border-width: 1px;
+    border-color: #212121; }
   .card__inner {
     width: 100%;
     padding-top: 30px;
@@ -130,6 +131,7 @@ footer {
     position: relative;
     border-style: solid;
     border-width: 1px;
+    border-color: #212121;
     background-color: #212121;
     color: white;
     font-size: 1.5em;
