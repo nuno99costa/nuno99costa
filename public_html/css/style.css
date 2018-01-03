@@ -117,7 +117,7 @@ footer {
       width: calc((100% / 2) - 30px); } }
   @media screen and (max-width: 767px) {
     .card {
-      width: 90%; } }
+      width: 100%; } }
   .card:hover .card__inner {
     background-color: white;
     color: #212121;
@@ -197,15 +197,16 @@ footer {
   .card__expander {
     width: calc(200% + 30px); } }
 .projectImage {
-  height: 60vh;
-  margin-left: 10vh;
+  width: 40vw;
+  margin-left: 5vh;
   margin-top: 5vh;
-  margin-bottom: 5vh; }
+  margin-bottom: 4vh; }
   @media screen and (max-width: 767px) {
     .projectImage {
-      height: 30vw;
-      margin-left: 20vw;
-      margin-top: 5vh; } }
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 80%;
+      margin-top: 10%; } }
 
 .projectText {
   margin-left: 5vw;
@@ -227,12 +228,15 @@ footer {
     text-overflow: ellipsis; }
   .projectText div {
     margin-top: auto;
-    margin-bottom: 6vh; }
+    margin-bottom: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-end; }
     .projectText div span {
       background-color: white;
       color: #212121;
       border-radius: 0.25em;
       padding: 0.4vw 0.6vw;
-      margin: 0 0.6vw; }
+      margin: 0.4vw 0.6vw; }
 
 /*# sourceMappingURL=style.css.map */
