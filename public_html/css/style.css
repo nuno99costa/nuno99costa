@@ -202,6 +202,12 @@ footer {
       margin-right: 10%;
       width: 80%;
       margin-top: 10%; } }
+  @media screen and (min-width: 767px) {
+    .projectImage {
+      margin-left: 10%;
+      margin-right: 10%;
+      width: 30vw;
+      margin-top: 10%; } }
 
 .projectText {
   margin-left: 5vw;
