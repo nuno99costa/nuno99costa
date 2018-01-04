@@ -47,6 +47,13 @@ nav {
     height: 15vh;
     ul {
         li {
+            @media (min-width: 1025px) {
+                img:hover {
+                    -webkit-filter: blur(1px);
+                    filter: blur(1px);
+                    transition: filter 0.2s ease;
+                }
+            }
             img {
                 position: fixed;
                 width: 11vh;
@@ -75,20 +82,6 @@ nav {
     }
 }
 
-@media (min-width: 1025px) {
-    nav {
-        ul {
-            li {
-                img:hover {
-                    -webkit-filter: blur(1px);
-                    filter: blur(1px);
-                    transition: filter 0.2s ease;
-                }
-            }
-        }
-    }
-}
-
 footer {
     height: 4vh;
     overflow-y: hidden;
@@ -101,25 +94,10 @@ footer {
     }
 }
 
-#card1 {
-    background-color: white;
-    width: 100%;
-    margin-top: 50vh;
-}
-
 .contentCard {
     background-color: white;
     width: 100%;
     margin-top: 15vh;
-}
-
-#mainImage {
-    position: relative;
-    margin-left: 33vw;
-    width: 34vw;
-    transform: translateY(-50%);
-    padding-bottom: 1vh;
-    border-radius: 50%;
 }
 
 .centeredBoxwithImage {
@@ -135,7 +113,6 @@ footer {
     padding-bottom: 2vh;
 }
 
-//Grid Container
 .cards {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -143,7 +120,6 @@ footer {
     flex-flow: row wrap;
 }
 
-//Cards
 .card {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -233,13 +209,82 @@ footer {
         }
 
         .card__expander {
-            overflow: visible;
+            overflow: hidden;
             margin-top: 30px;
             opacity: 1;
         }
     }
 }
 
+.projectImage {
+    margin-left: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 4vh;
+    @media screen and (max-width: 767px) {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        margin-top: 10%;
+    }
+    @media screen and (min-width: 767px) {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 30vw;
+        margin-top: 10%;
+    }
+}
+
+.projectText {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    text-overflow: ellipsis;
+    background-color: $black;
+    @media screen and (max-width: 767px) {
+        margin-top: 2vh;
+    }
+    h2 {
+        font-size: 1.25em;
+    }
+    p {
+        font-size: 0.75;
+        color: white;
+        text-overflow: ellipsis;
+    }
+    div {
+        margin-top: auto;
+        margin-bottom: 6vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        span {
+            background-color: white;
+            color: $black;
+            border-radius: 0.25em;
+            padding: 0.4vw 0.6vw;
+            margin: 0.5vw 0.6vw;
+        }
+    }
+}
+
+#card1 {
+    background-color: white;
+    width: 100%;
+    margin-top: 50vh;
+}
+
+#mainImage {
+    position: relative;
+    margin-left: 33vw;
+    width: 34vw;
+    transform: translateY(-50%);
+    padding-bottom: 1vh;
+    border-radius: 50%;
+}
 
 //Expander Widths
 //when 3 cards in a row
@@ -273,59 +318,4 @@ footer {
         width: calc(200% + 30px);
     }
 
-}
-
-.projectImage {
-    width: 40vw;
-    margin-left: 5vh;
-    margin-top: 5vh;
-    margin-bottom: 4vh;
-    @media screen and (max-width: 767px) {
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 80%;
-        margin-top: 10%;
-    }
-    @media screen and (min-width: 767px) {
-        margin-left: 10%;
-        margin-right: 10%;
-        width: 30vw;
-        margin-top: 10%;
-    }
-}
-
-.projectText {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    margin-top: 5vw;
-    display: flex;
-    justify-content: center;
-    align-items: left;
-    flex-direction: column;
-    text-overflow: ellipsis;
-    @media screen and (max-width: 767px) {
-        margin-top: 2vh;
-    }
-    h2{
-        font-size: 1.25em;
-    }
-    p {
-        font-size: 0.75;
-        color: white;
-        text-overflow: ellipsis;
-    }
-    div {
-        margin-top: auto;
-        margin-bottom: 6vh;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-end;
-        span {
-            background-color: white;
-            color: $black;
-            border-radius: 0.25em;
-            padding: 0.4vw 0.6vw;
-            margin: 0.5vw 0.6vw;
-        }
-    }
 }

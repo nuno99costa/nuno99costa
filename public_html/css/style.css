@@ -38,6 +38,11 @@ nav {
     display: inline;
     font-family: 'Rubik', sans-serif;
     color: white; }
+    @media (min-width: 1025px) {
+      nav ul li img:hover {
+        -webkit-filter: blur(1px);
+        filter: blur(1px);
+        transition: filter 0.2s ease; } }
     nav ul li img {
       position: fixed;
       width: 11vh;
@@ -56,11 +61,6 @@ nav {
       padding-top: 5vh;
       padding-bottom: 5vh; }
 
-@media (min-width: 1025px) {
-  nav ul li img:hover {
-    -webkit-filter: blur(1px);
-    filter: blur(1px);
-    transition: filter 0.2s ease; } }
 footer {
   height: 4vh;
   overflow-y: hidden; }
@@ -71,23 +71,10 @@ footer {
     padding-right: 5vw;
     line-height: 2vh; }
 
-#card1 {
-  background-color: white;
-  width: 100%;
-  margin-top: 50vh; }
-
 .contentCard {
   background-color: white;
   width: 100%;
   margin-top: 15vh; }
-
-#mainImage {
-  position: relative;
-  margin-left: 33vw;
-  width: 34vw;
-  transform: translateY(-50%);
-  padding-bottom: 1vh;
-  border-radius: 50%; }
 
 .centeredBoxwithImage {
   margin-top: -17vw;
@@ -166,33 +153,11 @@ footer {
     background-color: #212121;
     color: white; }
   .card.is-expanded .card__expander {
-    overflow: visible;
+    overflow: hidden;
     margin-top: 30px;
     opacity: 1; }
 
-@media screen and (min-width: 992px) {
-  .card:nth-of-type(3n+2) .card__expander {
-    margin-left: calc(-100% - 30px); }
-
-  .card:nth-of-type(3n+3) .card__expander {
-    margin-left: calc(-200% - 60px); }
-
-  .card:nth-of-type(3n+4) {
-    clear: left; }
-
-  .card__expander {
-    width: calc(300% + 60px); } }
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  .card:nth-of-type(2n+2) .card__expander {
-    margin-left: calc(-100% - 30px); }
-
-  .card:nth-of-type(2n+3) {
-    clear: left; }
-
-  .card__expander {
-    width: calc(200% + 30px); } }
 .projectImage {
-  width: 40vw;
   margin-left: 5vh;
   margin-top: 5vh;
   margin-bottom: 4vh; }
@@ -217,7 +182,8 @@ footer {
   justify-content: center;
   align-items: left;
   flex-direction: column;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  background-color: #212121; }
   @media screen and (max-width: 767px) {
     .projectText {
       margin-top: 2vh; } }
@@ -239,5 +205,40 @@ footer {
       border-radius: 0.25em;
       padding: 0.4vw 0.6vw;
       margin: 0.5vw 0.6vw; }
+
+#card1 {
+  background-color: white;
+  width: 100%;
+  margin-top: 50vh; }
+
+#mainImage {
+  position: relative;
+  margin-left: 33vw;
+  width: 34vw;
+  transform: translateY(-50%);
+  padding-bottom: 1vh;
+  border-radius: 50%; }
+
+@media screen and (min-width: 992px) {
+  .card:nth-of-type(3n+2) .card__expander {
+    margin-left: calc(-100% - 30px); }
+
+  .card:nth-of-type(3n+3) .card__expander {
+    margin-left: calc(-200% - 60px); }
+
+  .card:nth-of-type(3n+4) {
+    clear: left; }
+
+  .card__expander {
+    width: calc(300% + 60px); } }
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card:nth-of-type(2n+2) .card__expander {
+    margin-left: calc(-100% - 30px); }
+
+  .card:nth-of-type(2n+3) {
+    clear: left; }
+
+  .card__expander {
+    width: calc(200% + 30px); } }
 
 /*# sourceMappingURL=style.css.map */
