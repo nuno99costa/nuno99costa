@@ -206,6 +206,48 @@ footer {
       padding: 0.4vw 0.6vw;
       margin: 0.5vw 0.6vw; }
 
+.fa {
+  margin: 1vw;
+  border-radius: 50%;
+  height: 5vmax;
+  width: 5vmax;
+  padding-top: 1.667vmax;
+  font-size: 1.667vmax;
+  text-align: center;
+  text-decoration: none;
+  border-style: solid;
+  border-width: 1px; }
+
+.fa:hover {
+  border-color: #212121;
+  background: white;
+  color: #212121;
+  border-style: solid;
+  border-width: 1px; }
+
+.fa-twitter {
+  background: #55acee;
+  color: white; }
+
+.fa-facebook {
+  background-color: #3b5998;
+  color: white; }
+
+.fa-linkedin {
+  background: #0077b5;
+  color: white; }
+
+.fa-github {
+  background: #4183c4;
+  color: white; }
+
+.socialFlexbox {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly; }
+
 #card1 {
   background-color: white;
   width: 100%;

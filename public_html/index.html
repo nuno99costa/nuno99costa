@@ -13,6 +13,7 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-106754475-1');
+
     </script>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -95,11 +96,24 @@
             <p>Talho Robi, Cashier - 2014</p>
         </div>
     </div>
+    <div class="contentCard">
+        <div class="centeredBox">
+            <h2>Contacts</h2>
+            <p>After you've seen what I can do, do you want to give me a call?</p>
+            <p>Here are my most active social network accounts. Send me a message in any of them and I'll be sure to answer</p>
+            <div class="socialFlexbox">
+                <a href="https://www.linkedin.com/in/nuno99costa/" class="fa fa-linkedin fa-fw icons" id: "linkedin"></a>
+                <a href="https://www.facebook.com/NunoCosta99" id: "facebook" class="fa fa-facebook fa-fw icons"></a>
+                <a href="https://github.com/nuno99costa" class="fa fa-github fa-fw icons" id: "github"></a>
+                <a href="https://twitter.com/n99costa" class="fa fa-twitter fa-fw icons" id: "twitter"></a>
+            </div>
+        </div>
+    </div>
     <footer>
         <p>Made by Nuno Costa, 2017</p>
     </footer>
     <script type="text/javascript">
-        /* First CSS File */
+        /* style CSS File */
         var stylecss = document.createElement('link');
         stylecss.rel = 'stylesheet';
         stylecss.href = './css/style.css';
@@ -107,15 +121,23 @@
         var godefer = document.getElementsByTagName('link')[0];
         godefer.parentNode.insertBefore(stylecss, godefer);
 
-        /* Second CSS File */
+        /* font CSS File */
         var fontsCSS = document.createElement('link');
         fontsCSS.rel = 'stylesheet';
         fontsCSS.href = 'https://fonts.googleapis.com/css?family=Roboto|Rubik:700';
         var godefer2 = document.getElementsByTagName('link')[0];
         godefer2.parentNode.insertBefore(fontsCSS, godefer2);
+
+        /* icon CSS File */
+        var iconsCSS = document.createElement('link');
+        iconsCSS.rel = 'stylesheet';
+        iconsCSS.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+        var godefer3 = document.getElementsByTagName('link')[0];
+        godefer3.parentNode.insertBefore(iconsCSS, godefer3);
+
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script language="JavaScript" type="text/javascript" src="./js/index.js"></script>
+    <script async language="JavaScript" type="text/javascript" src="./js/index.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+@import 'brand-colors';
+
 $black: #212121;
 
 * {
@@ -32,7 +34,6 @@ h2 {
 }
 
 h3 {
-
     font-family: 'Rubik', sans-serif;
     padding-bottom: 1vh;
     font-size: 1.175em;
@@ -269,6 +270,55 @@ footer {
             margin: 0.5vw 0.6vw;
         }
     }
+}
+
+.fa{
+    margin: 1vw;
+    border-radius: 50%;
+    height: 5vmax;
+    width: 5vmax;
+    padding-top: 1.667vmax;
+    font-size: 1.667vmax;
+    text-align: center;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.fa:hover{
+    border-color: $black;
+    background: white;
+    color: $black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.fa-twitter {
+  background: $bc-twitter;
+  color: white;
+}
+
+.fa-facebook{
+    background-color: $bc-facebook;
+    color: white;
+}
+
+.fa-linkedin {
+  background: $bc-linkedin;
+  color: white;
+}
+
+.fa-github {
+  background: $bc-github;
+  color: white;
+}
+
+.socialFlexbox {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 #card1 {
