@@ -256,6 +256,9 @@ lastMatchInfo();
             </nav>
         </header>
         <div id="card1">
+            <div class="centeredBoxwithImage">
+                <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/profileicon/<?php echo $summonerIcon ?>.png">
+            </div>
         </div>
         <footer>
             <p>Made by Nuno Costa, 2017</p>
