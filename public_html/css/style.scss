@@ -50,9 +50,13 @@ nav {
         li {
             @media (min-width: 1025px) {
                 img:hover {
-                    -webkit-filter: blur(1px);
-                    filter: blur(1px);
-                    transition: filter 0.2s ease;
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                    cursor: pointer;
+                    border-color: white;
+                    border-style: solid;
+                    border-width: 1px;
+                    border-radius: 50%;
                 }
             }
             img {
@@ -65,9 +69,12 @@ nav {
                 margin-bottom: 2vh;
             }
             img:active {
-                -webkit-filter: blur(1px);
-                filter: blur(1px);
-                transition: filter 0.2s ease;
+                -webkit-filter: grayscale(1);
+                filter: grayscale(1);
+                border-color: white;
+                border-style: solid;
+                border-width: 1px;
+                border-radius: 50%;
             }
             @media screen and (max-width: 1025px) {
                 img {
@@ -109,7 +116,7 @@ footer {
     background-color: white;
     width: 60vw;
     margin-left: 20vw;
-    margin-top: 15vh;
+    margin-top: 10vh;
     @media screen and (max-width: 1025px) {
         width: 100%;
         padding-right: 5vw;
@@ -311,27 +318,32 @@ footer {
     background: white;
     color: $black;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
+    cursor: pointer;
 }
 
 .fa-twitter {
     background: $bc-twitter;
     color: white;
+    border-color: $bc-twitter;
 }
 
 .fa-facebook {
     background-color: $bc-facebook;
     color: white;
+    border-color: $bc-facebook;
 }
 
 .fa-linkedin {
     background: $bc-linkedin;
     color: white;
+    border-color: $bc-linkedin;
 }
 
 .fa-github {
     background: $bc-github;
     color: white;
+    border-color: $bc-github;
 }
 
 .socialFlexbox {

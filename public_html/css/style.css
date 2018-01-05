@@ -40,9 +40,13 @@ nav {
     color: white; }
     @media (min-width: 1025px) {
       nav ul li img:hover {
-        -webkit-filter: blur(1px);
-        filter: blur(1px);
-        transition: filter 0.2s ease; } }
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        cursor: pointer;
+        border-color: white;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 50%; } }
     nav ul li img {
       position: fixed;
       width: 5vw;
@@ -52,9 +56,12 @@ nav {
       margin-top: 2vh;
       margin-bottom: 2vh; }
     nav ul li img:active {
-      -webkit-filter: blur(1px);
-      filter: blur(1px);
-      transition: filter 0.2s ease; }
+      -webkit-filter: grayscale(1);
+      filter: grayscale(1);
+      border-color: white;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 50%; }
     @media screen and (max-width: 1025px) {
       nav ul li img {
         width: 12.5vw;
@@ -83,7 +90,7 @@ footer {
   background-color: white;
   width: 60vw;
   margin-left: 20vw;
-  margin-top: 15vh; }
+  margin-top: 10vh; }
   @media screen and (max-width: 1025px) {
     .contentCard {
       width: 100%;
@@ -242,23 +249,28 @@ footer {
   background: white;
   color: #212121;
   border-style: solid;
-  border-width: 1px; }
+  border-width: 2px;
+  cursor: pointer; }
 
 .fa-twitter {
   background: #55acee;
-  color: white; }
+  color: white;
+  border-color: #55acee; }
 
 .fa-facebook {
   background-color: #3b5998;
-  color: white; }
+  color: white;
+  border-color: #3b5998; }
 
 .fa-linkedin {
   background: #0077b5;
-  color: white; }
+  color: white;
+  border-color: #0077b5; }
 
 .fa-github {
   background: #4183c4;
-  color: white; }
+  color: white;
+  border-color: #4183c4; }
 
 .socialFlexbox {
   padding-top: 15px;
