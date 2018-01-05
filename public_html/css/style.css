@@ -136,7 +136,8 @@ footer {
     color: #212121;
     border-style: solid;
     border-width: 1px;
-    border-color: #212121; }
+    border-color: #212121;
+    cursor: pointer; }
   .card__inner {
     width: 100%;
     padding-top: 30px;
