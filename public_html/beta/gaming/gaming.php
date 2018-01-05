@@ -5,7 +5,7 @@ $summonerName = "NunoC99";
 $region = 'euw1';
 //get riot api key from text file. if instead, you want to have it in the file, replace line 9 e 10 with:
 // $riotapikey = 'YOUR API KEY HERE';
-$riotkey = "RGAPI-209e3d71-eb10-4659-a247-1073f5da2aeb";
+$riotkey = "RGAPI-42caac85-2bfc-453a-9be5-2d67848f2ee9";
 $riotapikey = $riotkey;
 
 // set variables that are used in the functions and in the html
