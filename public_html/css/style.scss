@@ -57,17 +57,27 @@ nav {
             }
             img {
                 position: fixed;
-                width: 11vh;
-                height: 11vh;
+                width: 5vw;
+                height: 5vw;
                 z-index: 1;
-                padding-left: 4vh;
-                padding-top: 2vh;
-                padding-bottom: 2vh;
+                margin-left: 5vw;
+                margin-top: 2vh;
+                margin-bottom: 2vh;
             }
             img:active {
                 -webkit-filter: blur(1px);
                 filter: blur(1px);
                 transition: filter 0.2s ease;
+            }
+            @media screen and (max-width: 1025px) {
+                img {
+                    width: 12.5vw;
+                    height: 12.5vw;
+                    z-index: 1;
+                    margin-left: 3.75vw;
+                    margin-top: 2vh;
+                    margin-bottom: 2vh;
+                }
             }
             div {
                 float: right;
@@ -97,21 +107,32 @@ footer {
 
 .contentCard {
     background-color: white;
-    width: 100%;
+    width: 60vw;
+    margin-left: 20vw;
     margin-top: 15vh;
+    @media screen and (max-width: 1025px) {
+        width: 100%;
+        padding-right: 5vw;
+        margin-left: 0;
+    }
 }
 
 .centeredBoxwithImage {
-    margin-top: -17vw;
-    padding-left: 19vh;
+    margin-top: -13vw;
     padding-bottom: 2vh;
+    padding-left: 5vh;
+    @media screen and (max-width: 1025px) {
+        margin-top: -28vw;
+        padding-left: 0;
+    }
 }
 
 .centeredBox {
     position: relative;
-    padding-left: 19vh;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding: 2vh 5vh;
+    @media screen and (max-width: 1025px) {
+        padding-left: 20vw;
+    }
 }
 
 .cards {
@@ -272,9 +293,9 @@ footer {
     }
 }
 
-.fa{
+.fa {
     margin: 1vw;
-    border-radius: 50%;
+    border-radius: 2.5vmax;
     height: 5vmax;
     width: 5vmax;
     padding-top: 1.667vmax;
@@ -285,7 +306,7 @@ footer {
     border-width: 1px;
 }
 
-.fa:hover{
+.fa:hover {
     border-color: $black;
     background: white;
     color: $black;
@@ -294,23 +315,23 @@ footer {
 }
 
 .fa-twitter {
-  background: $bc-twitter;
-  color: white;
+    background: $bc-twitter;
+    color: white;
 }
 
-.fa-facebook{
+.fa-facebook {
     background-color: $bc-facebook;
     color: white;
 }
 
 .fa-linkedin {
-  background: $bc-linkedin;
-  color: white;
+    background: $bc-linkedin;
+    color: white;
 }
 
 .fa-github {
-  background: $bc-github;
-  color: white;
+    background: $bc-github;
+    color: white;
 }
 
 .socialFlexbox {
@@ -323,17 +344,29 @@ footer {
 
 #card1 {
     background-color: white;
-    width: 100%;
-    margin-top: 50vh;
+    margin-top: 30vh;
+    padding-bottom: 20px;
+    width: 60vw;
+    margin-left: 20vw;
+    @media screen and (max-width: 1025px) {
+        width: 100%;
+        margin-left: 0;
+        padding-right: 5vw;
+        padding-left: 20vw;
+    }
 }
 
 #mainImage {
     position: relative;
-    margin-left: 33vw;
-    width: 34vw;
+    margin-left: 20vw;
+    width: 20vw;
     transform: translateY(-50%);
     padding-bottom: 1vh;
     border-radius: 50%;
+    @media screen and (max-width: 1025px) {
+        margin-left: 10vw;
+        width: 40vw;
+    }
 }
 
 //Expander Widths
