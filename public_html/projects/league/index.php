@@ -1,11 +1,12 @@
 <?php
-//fetch data from the previous page (summoner name and region)
-if(isset($_GET["summonerName"])) $summonerName = $_GET["summonerName"];
-if(isset($_GET["region"])) $region = $_GET["region"];
-
-//get riot api key from text file. if instead, you want to have it in the file, replace line 8 e 9 with:
+// your summoner name here
+$summonerName = "NunoC99";
+//your region here
+$region = 'euw1';
+//get riot api key from text file. if instead, you want to have it in the file, replace line 9 e 10 with:
 // $riotapikey = 'YOUR API KEY HERE';
-$riotapikey = file_get_contents("riot_key.txt");
+$riotkey = "RGAPI-42caac85-2bfc-453a-9be5-2d67848f2ee9";
+$riotapikey = $riotkey;
 
 // set variables that are used in the functions and in the html
 $ddragonVersion = '';
@@ -214,3 +215,77 @@ masteryList();
 lastMatchesInfo();
 lastMatchInfo();
 ?>
+    <!doctype html>
+    <html lang="pt">
+
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106754475-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-106754475-1');
+
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="google-site-verification" content="jEvvPKp7Ly44Bvb26KLoQq4j707GKmibZY2vRxPB6uI" />
+        <title>Nuno Costa - Web Developer</title>
+        <meta name="keywords" content="curriculum,resume,nuno,costa,pacos de ferreira,nuno costa,nuno99costa,front-end,developer">
+        <meta name="description" content="Nuno Costa Portfolio">
+        <link rel="icon" sizes="any" href="images/favicon.png">
+        <meta name="theme-color" content="#212121">
+        <meta name="author" content="Nuno Costa">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><img onclick="window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });" src="../../images/favicon.png"></li>
+                    <li>
+                        <div>Nuno Costa</div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div id="card1">
+        </div>
+        <footer>
+            <p>Made by Nuno Costa, 2017</p>
+        </footer>
+        <script type="text/javascript">
+            /* style CSS File */
+            var stylecss = document.createElement('link');
+            stylecss.rel = 'stylesheet';
+            stylecss.href = '../../css/style.css';
+            stylecss.type = 'text/css';
+            var godefer = document.getElementsByTagName('link')[0];
+            godefer.parentNode.insertBefore(stylecss, godefer);
+
+            /* font CSS File */
+            var fontsCSS = document.createElement('link');
+            fontsCSS.rel = 'stylesheet';
+            fontsCSS.href = 'https://fonts.googleapis.com/css?family=Roboto|Rubik:700';
+            var godefer2 = document.getElementsByTagName('link')[0];
+            godefer2.parentNode.insertBefore(fontsCSS, godefer2);
+
+            /* icon CSS File */
+            var iconsCSS = document.createElement('link');
+            iconsCSS.rel = 'stylesheet';
+            iconsCSS.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+            var godefer3 = document.getElementsByTagName('link')[0];
+            godefer3.parentNode.insertBefore(iconsCSS, godefer3);
+
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script async language="JavaScript" type="text/javascript" src="../../js/index.js"></script>
+    </body>
+
+    </html>
