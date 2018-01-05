@@ -256,8 +256,9 @@ lastMatchInfo();
             </nav>
         </header>
         <div id="card1">
+            <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/profileicon/<?php echo $summonerIcon ?>.png">
             <div class="centeredBoxwithImage">
-                <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/profileicon/<?php echo $summonerIcon ?>.png">
+                <h1><?php echo $summonerName ?></h1>
             </div>
         </div>
         <footer>
