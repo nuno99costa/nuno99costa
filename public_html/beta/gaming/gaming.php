@@ -1,11 +1,12 @@
 <?php
-//fetch data from the previous page (summoner name and region)
-if(isset($_GET["summonerName"])) $summonerName = $_GET["summonerName"];
-if(isset($_GET["region"])) $region = $_GET["region"];
-
-//get riot api key from text file. if instead, you want to have it in the file, replace line 8 e 9 with:
+// your summoner name here
+$summonerName = "NunoC99";
+//your region here
+$region = 'euw1';
+//get riot api key from text file. if instead, you want to have it in the file, replace line 9 e 10 with:
 // $riotapikey = 'YOUR API KEY HERE';
-$riotapikey = file_get_contents("riot_key.txt");
+$riotkey = file_get_contents("riot_key.txt");
+$riotapikey = $riotkey;
 
 // set variables that are used in the functions and in the html
 $ddragonVersion = '';
@@ -44,14 +45,14 @@ $participantCSMin = '';
 //parse json file with champion name and ID
 $champNameSheet = file_get_contents("champions.json");
 $champNameSheetDecoded = json_decode($champNameSheet, true);
- 
+
 // fetch data dragon version, used to fetch summoner and champion icons
 function serverInfo (){
 global $region, $riotapikey, $ddragonVersion;
 $versionURL = "https://". $region .".api.riotgames.com/lol/static-data/v3/realms?api_key=" . $riotapikey;
 $versionResult = file_get_contents($versionURL);
 $versionResult = json_decode($versionResult, true);
-$ddragonVersion = $versionResult["dd"];       
+$ddragonVersion = $versionResult["dd"];
 };
 
 //fetch summoner ID, account ID, icon ID and lvl
@@ -104,7 +105,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $imgtierFlexTT = "images/base-icons/" . $tierFlexTT . ".png";
 };
 };
-}; 
+};
 
 // get top 3 champions in mastery rating
 function masteryList(){
@@ -192,18 +193,18 @@ $participantKills = $lastMatchInfoResult["participants"][$participantIDorder]["s
 $participantAssists = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["assists"];
 $participantGold = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["goldEarned"];
 $participantCS = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["totalMinionsKilled"] + $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["neutralMinionsKilledEnemyJungle"] + $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["neutralMinionsKilledTeamJungle"];
-$participantGameTime = $lastMatchInfoResult["gameDuration"]; 
+$participantGameTime = $lastMatchInfoResult["gameDuration"];
 //transform seconds into average minutes of game
 $participantGameTime = round($participantGameTime / 60);
 //calculate cs per min
 $participantCSMin = round($participantCS / $participantGameTime,1);
     //get color for the chip, red for loss, green for win
 if($participantWL == true){
-    $participantWLresult = "Win";     
-    $participantWLcolor = "green"; 
+    $participantWLresult = "Win";
+    $participantWLcolor = "green";
 } else {
-    $participantWLresult = "Loss";  
-    $participantWLcolor = "red";  
+    $participantWLresult = "Loss";
+    $participantWLcolor = "red";
 };
 };
 
@@ -271,13 +272,11 @@ lastMatchInfo();
                         </div>
                         <ul class="right hide-on-med-and-down">
                             <li><a href="index.html"><i class="material-icons left">fingerprint</i>About me</a></li>
-                            <li><a href="gaming.php"><i class="material-icons left">videogame_asset</i>Gaming</a></li>
                             <li><a href="music.php"><i class="material-icons left">music_note</i>Music</a></li>
                             <li><a href="contact.php"><i class="material-icons left">mail</i>Contact Me</a></li>
                         </ul>
                         <ul id="dropdown1" class="dropdown-content">
                             <li><a href="index.html">About</a></li>
-                            <li><a href="gaming.php">Gaming</a></li>
                             <li><a href="music.php">Music</a></li>
                             <li><a href="contact.php">Contact</a></li>
                         </ul>
@@ -291,7 +290,7 @@ lastMatchInfo();
         <br>
         <div class="row">
             <div class="col s6 offset-s3 l2 offset-l5 valign-wrapper center">
-                <a class="waves-effect waves-light btn" href="league_form.html"><i class="material-icons left">refresh</i>Again?</a>
+                <a class="waves-effect waves-light btn" href="league_form.html"><i class="material-icons left">build</i>Try it</a>
             </div>
         </div>
         <div class="row">
@@ -340,7 +339,7 @@ lastMatchInfo();
                         <div class="col l7 s6">
                             <br>
                             <p class="flow-text">
-                                <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo .' lp'; ?>
+                                <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?>
                             </p>
                         </div>
                     </div>
@@ -371,20 +370,14 @@ lastMatchInfo();
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col s3 valign-wrapper">
-                            <div class="center-align">
+                        <div class="col s4 valign-wrapper">
                             <img class="responsive-img circle hoverable" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL2 ?>.png">
-                            </div>
                         </div>
-                        <div class="col s3 offset-s1 valign-wrapper">
-                            <div class="center-align">
+                        <div class="col s4 valign-wrapper">
                             <img class="responsive-img circle hoverable" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL1 ?>.png">
-                            </div>
                         </div>
-                        <div class="col s3 offset-s1 valign-wrapper">
-                            <div class="center-align">
+                        <div class="col s4 valign-wrapper">
                             <img class="responsive-img circle hoverable" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL3 ?>.png">
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -448,7 +441,7 @@ lastMatchInfo();
             </div>
         </footer>
         <!--  Scripts-->
-        <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.1.1.min.j4"></script>
         <script src="js/materialize.min.js"></script>
         <script src="js/init.js"></script>
     </body>

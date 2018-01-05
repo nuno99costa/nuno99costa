@@ -43,14 +43,14 @@ $participantCSMin = '';
 //parse json file with champion name and ID
 $champNameSheet = file_get_contents("champions.json");
 $champNameSheetDecoded = json_decode($champNameSheet, true);
- 
+
 // fetch data dragon version, used to fetch summoner and champion icons
 function serverInfo (){
 global $region, $riotapikey, $ddragonVersion;
 $versionURL = "https://". $region .".api.riotgames.com/lol/static-data/v3/realms?api_key=" . $riotapikey;
 $versionResult = file_get_contents($versionURL);
 $versionResult = json_decode($versionResult, true);
-$ddragonVersion = $versionResult["dd"];       
+$ddragonVersion = $versionResult["dd"];
 };
 
 //fetch summoner ID, account ID, icon ID and lvl
@@ -103,7 +103,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $imgtierFlexTT = "images/base-icons/" . $tierFlexTT . ".png";
 };
 };
-}; 
+};
 
 // get top 3 champions in mastery rating
 function masteryList(){
@@ -191,18 +191,18 @@ $participantKills = $lastMatchInfoResult["participants"][$participantIDorder]["s
 $participantAssists = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["assists"];
 $participantGold = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["goldEarned"];
 $participantCS = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["totalMinionsKilled"] + $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["neutralMinionsKilledEnemyJungle"] + $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["neutralMinionsKilledTeamJungle"];
-$participantGameTime = $lastMatchInfoResult["gameDuration"]; 
+$participantGameTime = $lastMatchInfoResult["gameDuration"];
 //transform seconds into average minutes of game
 $participantGameTime = round($participantGameTime / 60);
 //calculate cs per min
 $participantCSMin = round($participantCS / $participantGameTime,1);
     //get color for the chip, red for loss, green for win
 if($participantWL == true){
-    $participantWLresult = "Win";     
-    $participantWLcolor = "green"; 
+    $participantWLresult = "Win";
+    $participantWLcolor = "green";
 } else {
-    $participantWLresult = "Loss";  
-    $participantWLcolor = "red";  
+    $participantWLresult = "Loss";
+    $participantWLcolor = "red";
 };
 };
 
