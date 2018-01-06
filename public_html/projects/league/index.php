@@ -306,15 +306,12 @@ lastMatchInfo();
         <div class="contentCard">
             <div class="centeredBox">
                 <div id="leagueIDfb">
-                    <h2>My Last Game</h2>
+                    <h2>My Last Game (<?php echo $lastMatchQueueReal ?>)</h2>
                     <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ?></span>
                 </div>
                 <div class="lastgame">
                     <img src="./champs/<?php echo $lastChampNameURL ?>.png">
-                    <h3>
-                        <?php echo $lastMatchQueueReal ?>
-                    </h3>
-                    </div>
+                </div>
                 <div class="lastgame">
                     <p>
                         <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
@@ -322,7 +319,7 @@ lastMatchInfo();
                     <p>
                         <?php echo $participantCSMin ." CS/min" ?>
                     </p>
-                    </div>
+                </div>
                 <div class="lastgame">
                     <p>
                         <?php echo $participantGold ." gold earned" ?>
