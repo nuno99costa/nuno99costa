@@ -316,7 +316,7 @@ lastMatchInfo();
                 <div class="lastgame">
                     <img src="./champs/<?php echo $lastChampNameURL ?>.png">
                     <img src="./perk/<?php echo $participantKeystone ?>.png">
-                    <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png">
+                    <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png" id="secondary">
                 </div>
                 <div class="lastgame">
                     <p>
