@@ -264,21 +264,27 @@ lastMatchInfo();
             </div>
         </div>
         <div class="contentCard">
-        <div class="centeredBox">
-            <h1>Rank</h1>
-            <div class="flexbox">
-                <div>
-                    <h2>5v5 Solo Queue</h2>
-                </div>
-                <div>
-                    <h2>5v5 Flex Queue</h2>
-                </div>
-                <div>
-                    <h2>3v3 Flex Queue</h2>
+            <div class="centeredBox">
+                <h1>Rank</h1>
+                <div class="flexbox">
+                    <div>
+                        <p>5v5 Solo Queue</p>
+                        <p><?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?></p>
+                        <img src="<?php echo $imgtierSolo?>">
+                    </div>
+                    <div>
+                        <p>5v5 Flex Queue</p>
+                        <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ."lp"; ?></p>
+                        <img src="<?php echo $imgtierFlexSR?>">
+                    </div>
+                    <div>
+                        <p>3v3 Flex Queue</p>
+                        <p><?php echo $tierFlexTT ." ". $rankFlexTT .", ". $lpFlexTT .' lp'; ?></p>
+                        <img src="<?php echo $imgtierFlexTT?>">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         <footer>
             <p>Made by Nuno Costa, 2017</p>
         </footer>
