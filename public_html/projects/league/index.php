@@ -297,9 +297,9 @@ lastMatchInfo();
             <div class="centeredBox">
                 <h2>Champion Mastery</h2>
                 <div class="flexbox">
-                        <img src="/champs/<?php echo $champNameURL2?>">
-                        <img src="/champs/<?php echo $champNameURL1?>">
-                        <img src="/champs/<?php echo $champNameURL3?>">
+                        <img src="./champs/<?php echo $champNameURL2?>">
+                        <img src="./champs/<?php echo $champNameURL1?>">
+                        <img src="./champs/<?php echo $champNameURL3?>">
                 </div>
             </div>
         </div>
