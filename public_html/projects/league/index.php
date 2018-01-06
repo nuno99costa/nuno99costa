@@ -297,9 +297,36 @@ lastMatchInfo();
             <div class="centeredBox">
                 <h2>Champion Mastery</h2>
                 <div class="mastery">
-                        <img src="./champs/<?php echo $champNameURL2?>.png">
-                        <img src="./champs/<?php echo $champNameURL1?>.png">
-                        <img src="./champs/<?php echo $champNameURL3?>.png">
+                    <img src="./champs/<?php echo $champNameURL2?>.png">
+                    <img src="./champs/<?php echo $champNameURL1?>.png">
+                    <img src="./champs/<?php echo $champNameURL3?>.png">
+                </div>
+            </div>
+        </div>
+        <div class="contentCard">
+            <div class="centeredBox">
+                <div id="leagueIDfb">
+                    <h2>My Last Game</h2>
+                    <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ?></span>
+                </div>
+                <h2>My Last Game</h2>
+                <div class="mastery">
+                    <img src="./champs/<?php echo $lastChampNameURL ?>.png">
+                    <h3>
+                        <?php echo $lastMatchQueueReal ?>
+                    </h3>
+                    <p>
+                        <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
+                    </p>
+                    <p>
+                        <?php echo $participantCSMin ." CS/min" ?>
+                    </p>
+                    <p>
+                        <?php echo $participantGold ." gold earned" ?>
+                    </p>
+                    <p>
+                        <?php echo $participantDamageDealt ." damage dealt" ?>
+                    </p>
                 </div>
             </div>
         </div>
