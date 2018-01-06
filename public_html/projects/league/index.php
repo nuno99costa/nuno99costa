@@ -258,7 +258,9 @@ lastMatchInfo();
             <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/7.24.2/img/profileicon/<?php echo $summonerIcon ?>.png">
             <div class="centeredBoxwithImage">
                 <div id="leagueIDfb">
-                    <h1><?php echo $summonerName ?></h1>
+                    <h1>
+                        <?php echo $summonerName ?>
+                    </h1>
                     <span>Lvl <?php echo $summonerLvl?></span>
                 </div>
             </div>
@@ -269,19 +271,35 @@ lastMatchInfo();
                 <div class="flexbox">
                     <div id="rankfb">
                         <h3>5v5 Flex Queue</h3>
-                        <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ."lp"; ?></p>
+                        <p>
+                            <?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ."lp"; ?>
+                        </p>
                         <img src=".<?php echo $imgtierFlexSR?>">
                     </div>
                     <div id="rankfb">
                         <h3>5v5 Solo Queue</h3>
-                        <p><?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?></p>
+                        <p>
+                            <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?>
+                        </p>
                         <img src=".<?php echo $imgtierSolo?>">
                     </div>
                     <div id="rankfb">
                         <h3>3v3 Flex Queue</h3>
-                        <p><?php echo $tierFlexTT ." ". $rankFlexTT .", ". $lpFlexTT .' lp'; ?></p>
+                        <p>
+                            <?php echo $tierFlexTT ." ". $rankFlexTT .", ". $lpFlexTT .' lp'; ?>
+                        </p>
                         <img src=".<?php echo $imgtierFlexTT?>">
                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="contentCard">
+            <div class="centeredBox">
+                <h2>Champion Mastery</h2>
+                <div class="flexbox">
+                        <img src="<?php echo $champNameURL2?>">
+                        <img src="<?php echo $champNameURL1?>">
+                        <img src="<?php echo $champNameURL3?>">
                 </div>
             </div>
         </div>
