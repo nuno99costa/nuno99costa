@@ -318,25 +318,23 @@ lastMatchInfo();
                     <img src="./perk/<?php echo $participantKeystone ?>.png">
                     <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png" id="secondary">
                 </div>
-                <div class="lastgame">
-                    <div id="rankfb">
+                    <div id="flexbox">
                         <p>
                             <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
                         </p>
                         <p>
-                            <?php echo $participantDamageDealt ." damage dealt" ?>
+                            <?php echo $participantCSMin ." CS/min" ?>
                         </p>
                     </div>
                     <div id="rankfb">
                         <p>
-                            <?php echo $participantCSMin ." CS/min" ?>
+                            <?php echo $participantDamageDealt ." damage dealt" ?>
                         </p>
                         <p>
                             <?php echo $participantGold ." gold earned" ?>
                         </p>
                     </div>
                 </div>
-            </div>
         </div>
         <footer>
             <p>Made by Nuno Costa, 2017</p>
