@@ -326,7 +326,7 @@ lastMatchInfo();
                             <?php echo $participantCSMin ." CS/min" ?>
                         </p>
                     </div>
-                    <div id="flexbox">
+                    <div class="flexbox">
                         <p>
                             <?php echo $participantDamageDealt ." damage dealt" ?>
                         </p>
