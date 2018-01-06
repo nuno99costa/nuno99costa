@@ -338,35 +338,36 @@ lastMatchInfo();
                     </div>
                 </div>
             </div>
-            <footer>
-                <p>Made by Nuno Costa, 2017</p>
-            </footer>
-            <script type="text/javascript">
-                /* style CSS File */
-                var stylecss = document.createElement('link');
-                stylecss.rel = 'stylesheet';
-                stylecss.href = '../../css/style.css';
-                stylecss.type = 'text/css';
-                var godefer = document.getElementsByTagName('link')[0];
-                godefer.parentNode.insertBefore(stylecss, godefer);
+        </div>
+        <footer>
+            <p>Made by Nuno Costa, 2017</p>
+        </footer>
+        <script type="text/javascript">
+            /* style CSS File */
+            var stylecss = document.createElement('link');
+            stylecss.rel = 'stylesheet';
+            stylecss.href = '../../css/style.css';
+            stylecss.type = 'text/css';
+            var godefer = document.getElementsByTagName('link')[0];
+            godefer.parentNode.insertBefore(stylecss, godefer);
 
-                /* font CSS File */
-                var fontsCSS = document.createElement('link');
-                fontsCSS.rel = 'stylesheet';
-                fontsCSS.href = 'https://fonts.googleapis.com/css?family=Roboto|Rubik:700';
-                var godefer2 = document.getElementsByTagName('link')[0];
-                godefer2.parentNode.insertBefore(fontsCSS, godefer2);
+            /* font CSS File */
+            var fontsCSS = document.createElement('link');
+            fontsCSS.rel = 'stylesheet';
+            fontsCSS.href = 'https://fonts.googleapis.com/css?family=Roboto|Rubik:700';
+            var godefer2 = document.getElementsByTagName('link')[0];
+            godefer2.parentNode.insertBefore(fontsCSS, godefer2);
 
-                /* icon CSS File */
-                var iconsCSS = document.createElement('link');
-                iconsCSS.rel = 'stylesheet';
-                iconsCSS.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-                var godefer3 = document.getElementsByTagName('link')[0];
-                godefer3.parentNode.insertBefore(iconsCSS, godefer3);
+            /* icon CSS File */
+            var iconsCSS = document.createElement('link');
+            iconsCSS.rel = 'stylesheet';
+            iconsCSS.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+            var godefer3 = document.getElementsByTagName('link')[0];
+            godefer3.parentNode.insertBefore(iconsCSS, godefer3);
 
-            </script>
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <script async language="JavaScript" type="text/javascript" src="../../js/index.js"></script>
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script async language="JavaScript" type="text/javascript" src="../../js/index.js"></script>
     </body>
 
     </html>
