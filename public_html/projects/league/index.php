@@ -41,6 +41,8 @@ $participantKills = '';
 $participantAssists = '';
 $participantGold = '';
 $participantCSMin = '';
+$participantKeystone = '';
+$participantSecondaryPath = '';
 
 //parse json file with champion name and ID
 $champNameSheet = file_get_contents("champions.json");
@@ -172,7 +174,7 @@ $lastChampNameURL = preg_replace(
 
 //fetch last match info about the summoner in use
 function lastMatchInfo(){
-global $region, $riotapikey, $lastMatchID, $summonerID, $champNameURL1, $champNameURL2, $champNameURL3, $participantDamageDealt, $participantDeaths, $participantKills, $participantAssists, $participantGold, $participantCSMin, $participantWLresult, $participantWLcolor;
+global $region, $riotapikey, $lastMatchID, $summonerID, $champNameURL1, $champNameURL2, $champNameURL3, $participantDamageDealt, $participantDeaths, $participantKills, $participantAssists, $participantGold, $participantCSMin, $participantWLresult, $participantWLcolor, $participantKeystone, $participantSecondaryPath;
     $participantIDorder = $participantID = '';
 //parse lastest match information from Riot API
 $lastMatchInfoURL = "https://". $region .".api.riotgames.com/lol/match/v3/matches/". $lastMatchID ."?api_key=" . $riotapikey;
@@ -196,6 +198,8 @@ $participantCS = $lastMatchInfoResult["participants"][$participantIDorder]["stat
 $participantGameTime = $lastMatchInfoResult["gameDuration"];
 //transform seconds into average minutes of game
 $participantGameTime = round($participantGameTime / 60);
+$participantKeystone = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["perk0"];
+$participantSecondaryPath = $lastMatchInfoResult["participants"][$participantIDorder]["stats"]["perkSubStyle"];
 //calculate cs per min
 $participantCSMin = round($participantCS / $participantGameTime,1);
     //get color for the chip, red for loss, green for win
@@ -311,21 +315,23 @@ lastMatchInfo();
                 </div>
                 <div class="lastgame">
                     <img src="./champs/<?php echo $lastChampNameURL ?>.png">
+                    <img src="./perk/<?php echo $participantKeystone ?>.png">
+                    <img src="./perk/<?php echo $participantSecondaryPath ?>.png">
                 </div>
                 <div class="lastgame">
                     <p>
                         <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
                     </p>
                     <p>
-                        <?php echo $participantCSMin ." CS/min" ?>
+                        <?php echo $participantDamageDealt ." damage dealt" ?>
                     </p>
                 </div>
                 <div class="lastgame">
                     <p>
-                        <?php echo $participantGold ." gold earned" ?>
+                        <?php echo $participantCSMin ." CS/min" ?>
                     </p>
                     <p>
-                        <?php echo $participantDamageDealt ." damage dealt" ?>
+                        <?php echo $participantGold ." gold earned" ?>
                     </p>
                 </div>
             </div>
