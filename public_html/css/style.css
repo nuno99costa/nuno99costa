@@ -305,17 +305,24 @@ footer {
       margin-left: 10vw;
       width: 40vw; } }
 
-#nameFlexbox-lol {
+#leagueIDfb {
   display: flex;
   justify-content: space-between;
   flex-wrap: nowrap;
   padding-right: 5vh; }
-  #nameFlexbox-lol span {
+  #leagueIDfb span {
     background-color: #212121;
     color: white;
     border-radius: 0.5em;
     padding: 0.4vw 0.6vw;
     margin: 0.5vw 0.6vw; }
+
+#rankfb {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-content: center; }
 
 @media screen and (min-width: 992px) {
   .card:nth-of-type(3n+2) .card__expander {

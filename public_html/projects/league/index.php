@@ -84,7 +84,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $tierFlexSR = strtolower($tierFlexSR);
         $tierFlexSR = ucfirst($tierFlexSR);
         //use $tier to get the image path for the tier icon
-        $imgtierFlexSR = "./base-icons/" . $tierFlexSR . ".png";
+        $imgtierFlexSR = "/base-icons/" . $tierFlexSR . ".png";
 } elseif ($rankInfoDecoded[$queue]['queueType'] === 'RANKED_SOLO_5x5') {
       $tierSolo = $rankInfoDecoded[$queue]['tier'];
       $rankSolo = $rankInfoDecoded[$queue]['rank'];
@@ -257,7 +257,7 @@ lastMatchInfo();
         <div id="card1">
             <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/7.24.2/img/profileicon/<?php echo $summonerIcon ?>.png">
             <div class="centeredBoxwithImage">
-                <div id="nameFlexbox-lol">
+                <div id="leagueIDfb">
                     <h1><?php echo $summonerName ?></h1>
                     <span>Lvl <?php echo $summonerLvl?></span>
                 </div>
@@ -267,17 +267,17 @@ lastMatchInfo();
             <div class="centeredBox">
                 <h1>Rank</h1>
                 <div class="flexbox">
-                    <div>
-                        <p>5v5 Solo Queue</p>
-                        <p><?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?></p>
-                        <img src=".<?php echo $imgtierSolo?>">
-                    </div>
-                    <div>
+                    <div id="rankfb">
                         <p>5v5 Flex Queue</p>
                         <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ."lp"; ?></p>
                         <img src=".<?php echo $imgtierFlexSR?>">
                     </div>
-                    <div>
+                    <div id="rankfb">
+                        <p>5v5 Solo Queue</p>
+                        <p><?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?></p>
+                        <img src=".<?php echo $imgtierSolo?>">
+                    </div>
+                    <div id="rankfb">
                         <p>3v3 Flex Queue</p>
                         <p><?php echo $tierFlexTT ." ". $rankFlexTT .", ". $lpFlexTT .' lp'; ?></p>
                         <img src=".<?php echo $imgtierFlexTT?>">
