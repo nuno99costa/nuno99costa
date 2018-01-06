@@ -314,12 +314,16 @@ lastMatchInfo();
                     <h3>
                         <?php echo $lastMatchQueueReal ?>
                     </h3>
+                    </div>
+                <div class="lastgame">
                     <p>
                         <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
                     </p>
                     <p>
                         <?php echo $participantCSMin ." CS/min" ?>
                     </p>
+                    </div>
+                <div class="lastgame">
                     <p>
                         <?php echo $participantGold ." gold earned" ?>
                     </p>
