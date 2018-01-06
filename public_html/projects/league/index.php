@@ -242,7 +242,7 @@ lastMatchInfo();
         <title>Nuno Costa - Web Developer</title>
         <meta name="keywords" content="curriculum,resume,nuno,costa,pacos de ferreira,nuno costa,nuno99costa,front-end,developer">
         <meta name="description" content="Nuno Costa Portfolio">
-        <link rel="icon" sizes="any" href="images/favicon.png">
+        <link rel="icon" sizes="any" href="../../images/favicon.png">
         <meta name="theme-color" content="#212121">
         <meta name="author" content="Nuno Costa">
     </head>
