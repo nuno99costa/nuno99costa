@@ -310,7 +310,8 @@ lastMatchInfo();
         <div class="contentCard">
             <div class="centeredBox">
                 <div id="leagueIDfb">
-                    <h2>My Last Game (<?php echo $lastMatchQueueReal ?>)</h2>
+                    <h2>My Last Game (
+                        <?php echo $lastMatchQueueReal ?>)</h2>
                     <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ?></span>
                 </div>
                 <div class="lastgame">
@@ -319,44 +320,53 @@ lastMatchInfo();
                     <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png" id="secondary">
                 </div>
                 <div class="lastgame">
-                    <p><?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?></p>
-                    <p><?php echo $participantDamageDealt ." damage dealt" ?></p>
-                </div>
-                <div class="lastgame">
-                    <p><?php echo $participantCSMin ." CS/min" ?></p>
-                    <p><?php echo $participantGold ." gold earned" ?></p>
+                    <div id="rankfb">
+                        <p>
+                            <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
+                        </p>
+                        <p>
+                            <?php echo $participantDamageDealt ." damage dealt" ?>
+                        </p>
+                    </div>
+                    <div id="rankfb">
+                        <p>
+                            <?php echo $participantCSMin ." CS/min" ?>
+                        </p>
+                        <p>
+                            <?php echo $participantGold ." gold earned" ?>
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <footer>
-            <p>Made by Nuno Costa, 2017</p>
-        </footer>
-        <script type="text/javascript">
-            /* style CSS File */
-            var stylecss = document.createElement('link');
-            stylecss.rel = 'stylesheet';
-            stylecss.href = '../../css/style.css';
-            stylecss.type = 'text/css';
-            var godefer = document.getElementsByTagName('link')[0];
-            godefer.parentNode.insertBefore(stylecss, godefer);
+            <footer>
+                <p>Made by Nuno Costa, 2017</p>
+            </footer>
+            <script type="text/javascript">
+                /* style CSS File */
+                var stylecss = document.createElement('link');
+                stylecss.rel = 'stylesheet';
+                stylecss.href = '../../css/style.css';
+                stylecss.type = 'text/css';
+                var godefer = document.getElementsByTagName('link')[0];
+                godefer.parentNode.insertBefore(stylecss, godefer);
 
-            /* font CSS File */
-            var fontsCSS = document.createElement('link');
-            fontsCSS.rel = 'stylesheet';
-            fontsCSS.href = 'https://fonts.googleapis.com/css?family=Roboto|Rubik:700';
-            var godefer2 = document.getElementsByTagName('link')[0];
-            godefer2.parentNode.insertBefore(fontsCSS, godefer2);
+                /* font CSS File */
+                var fontsCSS = document.createElement('link');
+                fontsCSS.rel = 'stylesheet';
+                fontsCSS.href = 'https://fonts.googleapis.com/css?family=Roboto|Rubik:700';
+                var godefer2 = document.getElementsByTagName('link')[0];
+                godefer2.parentNode.insertBefore(fontsCSS, godefer2);
 
-            /* icon CSS File */
-            var iconsCSS = document.createElement('link');
-            iconsCSS.rel = 'stylesheet';
-            iconsCSS.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
-            var godefer3 = document.getElementsByTagName('link')[0];
-            godefer3.parentNode.insertBefore(iconsCSS, godefer3);
+                /* icon CSS File */
+                var iconsCSS = document.createElement('link');
+                iconsCSS.rel = 'stylesheet';
+                iconsCSS.href = 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+                var godefer3 = document.getElementsByTagName('link')[0];
+                godefer3.parentNode.insertBefore(iconsCSS, godefer3);
 
-        </script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script async language="JavaScript" type="text/javascript" src="../../js/index.js"></script>
+            </script>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script async language="JavaScript" type="text/javascript" src="../../js/index.js"></script>
     </body>
 
     </html>
