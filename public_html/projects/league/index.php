@@ -273,21 +273,21 @@ lastMatchInfo();
             <div class="centeredBox">
                 <h2>Rank</h2>
                 <div class="flexbox">
-                    <div id="rankfb">
+                    <div id="rankfb flexsr">
                         <h3>5v5 Flex Queue</h3>
                         <p>
                             <?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ."lp"; ?>
                         </p>
                         <img src=".<?php echo $imgtierFlexSR?>">
                     </div>
-                    <div id="rankfb">
+                    <div id="rankfb solosr">
                         <h3>5v5 Solo Queue</h3>
                         <p>
                             <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?>
                         </p>
                         <img src=".<?php echo $imgtierSolo?>">
                     </div>
-                    <div id="rankfb">
+                    <div id="rankfb flextt">
                         <h3>3v3 Flex Queue</h3>
                         <p>
                             <?php echo $tierFlexTT ." ". $rankFlexTT .", ". $lpFlexTT .' lp'; ?>
