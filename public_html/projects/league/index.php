@@ -319,20 +319,12 @@ lastMatchInfo();
                     <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png" id="secondary">
                 </div>
                 <div class="lastgame">
-                    <p>
-                        <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
-                    </p>
-                    <p>
-                        <?php echo $participantDamageDealt ." damage dealt" ?>
-                    </p>
+                    <p><?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?></p>
+                    <p><?php echo $participantDamageDealt ." damage dealt" ?></p>
                 </div>
                 <div class="lastgame">
-                    <p>
-                        <?php echo $participantCSMin ." CS/min" ?>
-                    </p>
-                    <p>
-                        <?php echo $participantGold ." gold earned" ?>
-                    </p>
+                    <p><?php echo $participantCSMin ." CS/min" ?></p>
+                    <p><?php echo $participantGold ." gold earned" ?></p>
                 </div>
             </div>
         </div>
