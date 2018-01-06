@@ -305,6 +305,10 @@ footer {
       margin-left: 10vw;
       width: 40vw; } }
 
+#nameFlexbox-lol {
+  display: flex;
+  justify-content: space-between; }
+
 @media screen and (min-width: 992px) {
   .card:nth-of-type(3n+2) .card__expander {
     margin-left: calc(-100% - 30px); }
