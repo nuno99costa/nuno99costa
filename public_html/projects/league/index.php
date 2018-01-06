@@ -318,7 +318,7 @@ lastMatchInfo();
                     <img src="./perk/<?php echo $participantKeystone ?>.png">
                     <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png" id="secondary">
                 </div>
-                    <div id="flexbox">
+                    <div class="flexbox">
                         <p>
                             <?php echo $participantKills ."/". $participantDeaths ."/". $participantAssists ?>
                         </p>
@@ -326,7 +326,7 @@ lastMatchInfo();
                             <?php echo $participantCSMin ." CS/min" ?>
                         </p>
                     </div>
-                    <div id="rankfb">
+                    <div id="flexbox">
                         <p>
                             <?php echo $participantDamageDealt ." damage dealt" ?>
                         </p>
