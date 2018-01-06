@@ -208,7 +208,6 @@ if($participantWL == true){
 };
 };
 
-serverInfo();
 summonerInfo();
 rankInfo();
 masteryList();
@@ -256,7 +255,7 @@ lastMatchInfo();
             </nav>
         </header>
         <div id="card1">
-            <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/profileicon/<?php echo $summonerIcon ?>.png">
+            <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/7.24.2/img/profileicon/<?php echo $summonerIcon ?>.png">
             <div class="centeredBoxwithImage">
                 <div id="nameFlexbox-lol">
                     <h1><?php echo $summonerName ?></h1>
@@ -264,6 +263,22 @@ lastMatchInfo();
                 </div>
             </div>
         </div>
+        <div class="contentCard">
+        <div class="centeredBox">
+            <h1>Rank</h1>
+            <div class="flexbox">
+                <div>
+                    <h2>5v5 Solo Queue</h2>
+                </div>
+                <div>
+                    <h2>5v5 Flex Queue</h2>
+                </div>
+                <div>
+                    <h2>3v3 Flex Queue</h2>
+                </div>
+            </div>
+        </div>
+    </div>
         <footer>
             <p>Made by Nuno Costa, 2017</p>
         </footer>
