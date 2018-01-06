@@ -258,9 +258,9 @@ lastMatchInfo();
         <div id="card1">
             <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/profileicon/<?php echo $summonerIcon ?>.png">
             <div class="centeredBoxwithImage">
-                <div id="nameFlexbox">
+                <div id="nameFlexbox-lol">
                     <h1><?php echo $summonerName ?></h1>
-                    <h1>Lvl <?php echo $summonerLvl?></h1>
+                    <span>Lvl <?php echo $summonerLvl?></span>
                 </div>
             </div>
         </div>

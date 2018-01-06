@@ -310,6 +310,12 @@ footer {
   justify-content: space-between;
   flex-wrap: nowrap;
   padding-right: 5vh; }
+  #nameFlexbox-lol span {
+    background-color: white;
+    color: #212121;
+    border-radius: 0.25em;
+    padding: 0.4vw 0.6vw;
+    margin: 0.5vw 0.6vw; }
 
 @media screen and (min-width: 992px) {
   .card:nth-of-type(3n+2) .card__expander {
