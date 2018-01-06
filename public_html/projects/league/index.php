@@ -84,7 +84,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $tierFlexSR = strtolower($tierFlexSR);
         $tierFlexSR = ucfirst($tierFlexSR);
         //use $tier to get the image path for the tier icon
-        $imgtierFlexSR = "/base-icons/" . $tierFlexSR . ".png";
+        $imgtierFlexSR = "./base-icons/" . $tierFlexSR . ".png";
 } elseif ($rankInfoDecoded[$queue]['queueType'] === 'RANKED_SOLO_5x5') {
       $tierSolo = $rankInfoDecoded[$queue]['tier'];
       $rankSolo = $rankInfoDecoded[$queue]['rank'];
@@ -270,17 +270,17 @@ lastMatchInfo();
                     <div>
                         <p>5v5 Solo Queue</p>
                         <p><?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ; ?></p>
-                        <img src="<?php echo $imgtierSolo?>">
+                        <img src=".<?php echo $imgtierSolo?>">
                     </div>
                     <div>
                         <p>5v5 Flex Queue</p>
                         <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ."lp"; ?></p>
-                        <img src="<?php echo $imgtierFlexSR?>">
+                        <img src=".<?php echo $imgtierFlexSR?>">
                     </div>
                     <div>
                         <p>3v3 Flex Queue</p>
                         <p><?php echo $tierFlexTT ." ". $rankFlexTT .", ". $lpFlexTT .' lp'; ?></p>
-                        <img src="<?php echo $imgtierFlexTT?>">
+                        <img src=".<?php echo $imgtierFlexTT?>">
                     </div>
                 </div>
             </div>
