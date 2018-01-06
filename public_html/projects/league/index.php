@@ -84,7 +84,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $tierFlexSR = strtolower($tierFlexSR);
         $tierFlexSR = ucfirst($tierFlexSR);
         //use $tier to get the image path for the tier icon
-        $imgtierFlexSR = "images/base-icons/" . $tierFlexSR . ".png";
+        $imgtierFlexSR = "/base-icons/" . $tierFlexSR . ".png";
 } elseif ($rankInfoDecoded[$queue]['queueType'] === 'RANKED_SOLO_5x5') {
       $tierSolo = $rankInfoDecoded[$queue]['tier'];
       $rankSolo = $rankInfoDecoded[$queue]['rank'];
@@ -93,7 +93,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $tierSolo = strtolower($tierSolo);
         $tierSolo = ucfirst($tierSolo);
         //use $tier to get the image path for the tier icon
-        $imgtierSolo = "images/base-icons/" . $tierSolo . ".png";
+        $imgtierSolo = "/base-icons/" . $tierSolo . ".png";
 } else {
       $tierFlexTT = $rankInfoDecoded[$queue]['tier'];
       $rankFlexTT = $rankInfoDecoded[$queue]['rank'];
@@ -102,7 +102,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $tierFlexTT = strtolower($tierFlexTT);
         $tierFlexTT = ucfirst($tierFlexTT);
         //use $tier to get the image path for the tier icon
-        $imgtierFlexTT = "images/base-icons/" . $tierFlexTT . ".png";
+        $imgtierFlexTT = "/base-icons/" . $tierFlexTT . ".png";
 };
 };
 };
