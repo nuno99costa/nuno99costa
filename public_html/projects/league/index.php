@@ -301,9 +301,9 @@ lastMatchInfo();
             <div class="centeredBox">
                 <h2>Champion Mastery</h2>
                 <div class="mastery">
-                    <img src="./champs/<?php echo $champNameURL2?>.png">
-                    <img src="./champs/<?php echo $champNameURL1?>.png">
-                    <img src="./champs/<?php echo $champNameURL3?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $champNameURL2?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $champNameURL1?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $champNameURL3?>.png">
                 </div>
             </div>
         </div>
@@ -314,7 +314,7 @@ lastMatchInfo();
                     <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ?></span>
                 </div>
                 <div class="lastgame">
-                    <img src="./champs/<?php echo $lastChampNameURL ?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $lastChampNameURL ?>.png">
                     <img src="./perk/<?php echo $participantKeystone ?>.png">
                     <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png" id="secondary">
                 </div>
