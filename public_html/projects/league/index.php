@@ -283,7 +283,7 @@ lastMatchInfo();
                     <div class="rankfb" id="solosr">
                         <h3>5v5 Solo Queue</h3>
                         <p>
-                            <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ." ". $imgtierSolo? ; ?>
+                            <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ." ". $imgtierSolos ; ?>
                         </p>
                         <img src=".<?php echo $imgtierSolo?>">
                     </div>
