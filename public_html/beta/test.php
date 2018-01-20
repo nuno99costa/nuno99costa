@@ -3,4 +3,7 @@ $rankInfoURL = "https://euw1.riotgames.com/lol/league/v3/positions/by-summoner/9
 $rankInfoResult = file_get_contents($rankInfoURL);
 $rankInfoDecoded = json_decode($rankInfoResult, true);
 echo $rankInfoDecoded;
+if ($rankInfoDecoded === null) {
+    echo "Failed";
+}
 ?>
