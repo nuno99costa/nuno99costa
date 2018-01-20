@@ -5,7 +5,5 @@ $rankInfoDecoded = json_decode($rankInfoResult, true);
 echo $rankInfoDecoded;
 if (empty($rankInfoDecoded)) {
     echo "Failed";
-} else {
-    echo "True";
-}
+};
 ?>
