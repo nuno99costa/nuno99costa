@@ -291,15 +291,15 @@ lastMatchInfo();
                     <div class="rankfb" id="flexsr">
                         <h3>5v5 Flex Queue</h3>
                         <p>
-                            <?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ."lp"; ?>
+                            <?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ." lp"; ?>
                         </p>
                         <img src=".<?php echo $imgtierFlexSR?>">
                     </div>
                     <div class="rankfb" id="solosr">
                         <h3>5v5 Solo Queue</h3>
                         <p>
-                            <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ."lp"; ?>
-                        </p>0
+                            <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ." lp"; ?>
+                        </p>
                         <img src=".<?php echo $imgtierSolo?>">
                     </div>
                     <div class="rankfb" id="flextt">
