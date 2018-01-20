@@ -77,11 +77,25 @@ $rankInfoURL = "https://". $region .".api.riotgames.com/lol/league/v3/positions/
 $rankInfoResult = file_get_contents($rankInfoURL);
 $rankInfoDecoded = json_decode($rankInfoResult, true);
 //get tier, rank and lp from the parsed information
+if (empty($rankInfoDecoded)) {
+    $tierFlexSR = "Unranked";
+    $rankFlexSR = "1";
+    $lpFlexSR = "0";
+    $imgtierFlexSR = "/base-icons/Provisional.png";
+    $tierFlexTT = "Unranked";
+    $rankFlexTT = "1";
+    $lpFlexTT = "0";
+    $imgtierFlexTT = "/base-icons/Provisional.png";
+    $tierSolo = "Unranked";
+    $rankSolo = "1";
+    $lpSolo = "0";
+    $imgtierSolo = "/base-icons/Provisional.png";
+} else {
 for ($queue = 0; $queue <= 2; $queue ++){
     if ($rankInfoDecoded[$queue]['queueType'] === 'RANKED_FLEX_SR') {
       $tierFlexSR = $rankInfoDecoded[$queue]['tier'];
       $rankFlexSR = $rankInfoDecoded[$queue]['rank'];
-      $lpFlexSR = $rankInfoDecoded[$queue]['leaguePoints'];
+      $lpFlexSR = $rankProvisionalInfoDecoded[$queue]['leaguePoints'];
         //treat the $tier string, making it lower-cap and uppercasing the first letter
         $tierFlexSR = strtolower($tierFlexSR);
         $tierFlexSR = ucfirst($tierFlexSR);
@@ -105,6 +119,7 @@ for ($queue = 0; $queue <= 2; $queue ++){
         $tierFlexTT = ucfirst($tierFlexTT);
         //use $tier to get the image path for the tier icon
         $imgtierFlexTT = "/base-icons/" . $tierFlexTT . ".png";
+};
 };
 };
 };
@@ -283,8 +298,8 @@ lastMatchInfo();
                     <div class="rankfb" id="solosr">
                         <h3>5v5 Solo Queue</h3>
                         <p>
-                            <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ." ". $imgtierSolos ; ?>
-                        </p>
+                            <?php echo $tierSolo ." ". $rankSolo .", ". $lpSolo ."lp"; ?>
+                        </p>0
                         <img src=".<?php echo $imgtierSolo?>">
                     </div>
                     <div class="rankfb" id="flextt">
