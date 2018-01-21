@@ -111,7 +111,7 @@ function rankInfo()
 		$imgtierSolo = "/base-icons/Provisional.png";
 	}
 	elseif ($n === 1) {
-		if ($rankInfoDecoded[$queue]['queueType'] === 'RANKED_FLEX_SR') {
+		if ($rankInfoDecoded[$queue]['queueType'] == 'RANKED_FLEX_SR') {
             $n = 100;
 			$tierFlexSR = $rankInfoDecoded[$queue]['tier'];
 			$rankFlexSR = $rankInfoDecoded[$queue]['rank'];
@@ -134,7 +134,7 @@ function rankInfo()
 			$lpSolo = "0";
 			$imgtierSolo = "/base-icons/Provisional.png";
 		}
-		elseif ($rankInfoDecoded[$queue]['queueType'] === 'RANKED_SOLO_5x5') {
+		elseif ($rankInfoDecoded[$queue]['queueType'] == 'RANKED_SOLO_5x5') {
 
             $n = 1001;
 			$tierSolo = $rankInfoDecoded[$queue]['tier'];
@@ -159,7 +159,6 @@ function rankInfo()
 			$imgtierFlexSR = "/base-icons/Provisional.png";
 		}
 		else {
-
             $n = 1011;
 			$tierFlexTT = $rankInfoDecoded[$queue]['tier'];
 			$rankFlexTT = $rankInfoDecoded[$queue]['rank'];
