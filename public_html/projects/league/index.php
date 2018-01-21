@@ -71,7 +71,7 @@ function serverInfo()
 
 function summonerInfo()
 {
-	global $region, $summonerName, $riotapikey, $summonerID, $accountID, $summonerIcon, $summonerLvl,$n;
+	global $region, $summonerName, $riotapikey, $summonerID, $accountID, $summonerIcon, $summonerLvl;
 	$accountInfoURL = "https://" . $region . ".api.riotgames.com/lol/summoner/v3/summoners/by-name/" . $summonerName . "?api_key=" . $riotapikey;
 	$accountInfoResult = file_get_contents($accountInfoURL);
 	$accountInfoResult = json_decode($accountInfoResult, true);
@@ -85,7 +85,7 @@ function summonerInfo()
 
 function rankInfo()
 {
-	global $region, $riotapikey, $summonerID, $tierSolo, $rankSolo, $lpSolo, $imgtierSolo, $tierFlexTT, $rankFlexTT, $lpFlexTT, $imgtierFlexTT, $tierFlexSR, $rankFlexSR, $lpFlexSR, $imgtierFlexSR;
+	global $region, $riotapikey, $summonerID, $tierSolo, $rankSolo, $lpSolo, $imgtierSolo, $tierFlexTT, $rankFlexTT, $lpFlexTT, $imgtierFlexTT, $tierFlexSR, $rankFlexSR, $lpFlexSR, $imgtierFlexSR, $n;
 
 	// parse ranked information from Riot API
 
@@ -488,8 +488,7 @@ lastMatchInfo();
                 </div>
         </div>
         <footer>
-            <p>Made by Nuno Costa, 2017 //
-            <?php echo $n ?></p>
+            <p>Made by Nuno Costa, 2017 // <?php echo $n ?></p>
         </footer>
         <script type="text/javascript">
             /* style CSS File */
