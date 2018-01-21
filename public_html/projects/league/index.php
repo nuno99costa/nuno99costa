@@ -488,8 +488,8 @@ lastMatchInfo();
                 </div>
         </div>
         <footer>
-            <p>Made by Nuno Costa, 2017</p>
-            <?php echo $n ?>
+            <p>Made by Nuno Costa, 2017 //
+            <?php echo $n ?></p>
         </footer>
         <script type="text/javascript">
             /* style CSS File */
