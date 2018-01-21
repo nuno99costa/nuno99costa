@@ -112,9 +112,9 @@ function rankInfo()
 	}
 	elseif ($n === 1) {
 		if ($rankInfoDecoded[0]['queueType'] == 'RANKED_FLEX_SR') {
-			$tierFlexSR = $rankInfoDecoded[$queue]['tier'];
-			$rankFlexSR = $rankInfoDecoded[$queue]['rank'];
-			$lpFlexSR = $rankProvisionalInfoDecoded[$queue]['leaguePoints'];
+			$tierFlexSR = $rankInfoDecoded[0]['tier'];
+			$rankFlexSR = $rankInfoDecoded[0]['rank'];
+			$lpFlexSR = $rankProvisionalInfoDecoded[0]['leaguePoints'];
 
 			// treat the $tier string, making it lower-cap and uppercasing the first letter
 
@@ -134,9 +134,9 @@ function rankInfo()
 			$imgtierSolo = "/base-icons/Provisional.png";
 		}
 		elseif ($rankInfoDecoded[0]['queueType'] == 'RANKED_SOLO_5x5') {
-			$tierSolo = $rankInfoDecoded[$queue]['tier'];
-			$rankSolo = $rankInfoDecoded[$queue]['rank'];
-			$lpSolo = $rankInfoDecoded[$queue]['leaguePoints'];
+			$tierSolo = $rankInfoDecoded[0]['tier'];
+			$rankSolo = $rankInfoDecoded[0]['rank'];
+			$lpSolo = $rankInfoDecoded[0]['leaguePoints'];
 
 			// treat the $tier string, making it lower-cap and uppercasing the first letter
 
@@ -488,7 +488,7 @@ lastMatchInfo();
                 </div>
         </div>
         <footer>
-            <p>Made by Nuno Costa, 2017</p>
+            <p>Made by Nuno Costa, 20170</p>
         </footer>
         <script type="text/javascript">
             /* style CSS File */
