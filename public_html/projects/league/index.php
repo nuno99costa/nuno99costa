@@ -85,7 +85,7 @@ function summonerInfo()
 
 function rankInfo()
 {
-	global $region, $riotapikey, $summonerID, $tierSolo, $rankSolo, $lpSolo, $imgtierSolo, $tierFlexTT, $rankFlexTT, $lpFlexTT, $imgtierFlexTT, $tierFlexSR, $rankFlexSR, $lpFlexSR, $imgtierFlexSR, $rankInfoDecoded;
+	global $region, $riotapikey, $summonerID, $tierSolo, $rankSolo, $lpSolo, $imgtierSolo, $tierFlexTT, $rankFlexTT, $lpFlexTT, $imgtierFlexTT, $tierFlexSR, $rankFlexSR, $lpFlexSR, $imgtierFlexSR;
 
 	// parse ranked information from Riot API
 
@@ -111,8 +111,7 @@ function rankInfo()
 		$imgtierSolo = "/base-icons/Provisional.png";
 	}
 	elseif ($n === 1) {
-		if ($rankInfoDecoded[$queue]['queueType'] == 'RANKED_FLEX_SR') {
-            $n = 100;
+		if ($rankInfoDecoded[0]['queueType'] == 'RANKED_FLEX_SR') {
 			$tierFlexSR = $rankInfoDecoded[$queue]['tier'];
 			$rankFlexSR = $rankInfoDecoded[$queue]['rank'];
 			$lpFlexSR = $rankProvisionalInfoDecoded[$queue]['leaguePoints'];
@@ -134,9 +133,7 @@ function rankInfo()
 			$lpSolo = "0";
 			$imgtierSolo = "/base-icons/Provisional.png";
 		}
-		elseif ($rankInfoDecoded[$queue]['queueType'] == 'RANKED_SOLO_5x5') {
-
-            $n = 1001;
+		elseif ($rankInfoDecoded[0]['queueType'] == 'RANKED_SOLO_5x5') {
 			$tierSolo = $rankInfoDecoded[$queue]['tier'];
 			$rankSolo = $rankInfoDecoded[$queue]['rank'];
 			$lpSolo = $rankInfoDecoded[$queue]['leaguePoints'];
@@ -159,10 +156,9 @@ function rankInfo()
 			$imgtierFlexSR = "/base-icons/Provisional.png";
 		}
 		else {
-            $n = 1011;
-			$tierFlexTT = $rankInfoDecoded[$queue]['tier'];
-			$rankFlexTT = $rankInfoDecoded[$queue]['rank'];
-			$lpFlexTT = $rankInfoDecoded[$queue]['leaguePoints'];
+			$tierFlexTT = $rankInfoDecoded[0]['tier'];
+			$rankFlexTT = $rankInfoDecoded[0]['rank'];
+			$lpFlexTT = $rankInfoDecoded[0]['leaguePoints'];
 
 			// treat the $tier string, making it lower-cap and uppercasing the first letter
 
@@ -492,7 +488,7 @@ lastMatchInfo();
                 </div>
         </div>
         <footer>
-            <p>Made by Nuno Costa, 2017 // <?php echo $rankInfoDecoded ?></p>
+            <p>Made by Nuno Costa, 2017</p>
         </footer>
         <script type="text/javascript">
             /* style CSS File */
