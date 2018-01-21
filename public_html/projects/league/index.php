@@ -71,7 +71,7 @@ function serverInfo()
 
 function summonerInfo()
 {
-	global $region, $summonerName, $riotapikey, $summonerID, $accountID, $summonerIcon, $summonerLvl;
+	global $region, $summonerName, $riotapikey, $summonerID, $accountID, $summonerIcon, $summonerLvl,$n;
 	$accountInfoURL = "https://" . $region . ".api.riotgames.com/lol/summoner/v3/summoners/by-name/" . $summonerName . "?api_key=" . $riotapikey;
 	$accountInfoResult = file_get_contents($accountInfoURL);
 	$accountInfoResult = json_decode($accountInfoResult, true);
@@ -489,6 +489,7 @@ lastMatchInfo();
         </div>
         <footer>
             <p>Made by Nuno Costa, 2017</p>
+            <?php echo $n ?>
         </footer>
         <script type="text/javascript">
             /* style CSS File */
