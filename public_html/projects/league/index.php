@@ -85,7 +85,7 @@ function summonerInfo()
 
 function rankInfo()
 {
-	global $region, $riotapikey, $summonerID, $tierSolo, $rankSolo, $lpSolo, $imgtierSolo, $tierFlexTT, $rankFlexTT, $lpFlexTT, $imgtierFlexTT, $tierFlexSR, $rankFlexSR, $lpFlexSR, $imgtierFlexSR, $n;
+	global $region, $riotapikey, $summonerID, $tierSolo, $rankSolo, $lpSolo, $imgtierSolo, $tierFlexTT, $rankFlexTT, $lpFlexTT, $imgtierFlexTT, $tierFlexSR, $rankFlexSR, $lpFlexSR, $imgtierFlexSR;
 
 	// parse ranked information from Riot API
 
@@ -492,7 +492,7 @@ lastMatchInfo();
                 </div>
         </div>
         <footer>
-            <p>Made by Nuno Costa, 2017 // <?php echo $n ?></p>
+            <p>Made by Nuno Costa, 2017 // <?php echo $rankInfoDecoded ?></p>
         </footer>
         <script type="text/javascript">
             /* style CSS File */
