@@ -10,19 +10,19 @@ function number_format_short( $n, $precision = 1 ) {
 	} else if ($n < 900000) {
 		// 0.9k-850k
 		$n_format = number_format($n / 1000, $precision);
-		$suffix = 'K';
+		$suffix = 'k';
 	} else if ($n < 900000000) {
 		// 0.9m-850m
 		$n_format = number_format($n / 1000000, $precision);
-		$suffix = 'M';
+		$suffix = 'm';
 	} else if ($n < 900000000000) {
 		// 0.9b-850b
 		$n_format = number_format($n / 1000000000, $precision);
-		$suffix = 'B';
+		$suffix = 'b';
 	} else {
 		// 0.9t+
 		$n_format = number_format($n / 1000000000000, $precision);
-		$suffix = 'T';
+		$suffix = 't';
 	}
   // Remove unecessary zeroes after decimal. "1.0" -> "1"; "1.00" -> "1"
   // Intentionally does not affect partials, eg "1.50" -> "1.50"
@@ -496,7 +496,7 @@ lastMatchInfo();
             <div class="centeredBox">
                 <div id="leagueIDfb">
                     <h2>My Last Game (<?php echo $lastMatchQueueReal ?>)</h2>
-                    <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ."/ ". $gametime ?></span>
+                    <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ." (". $gametime .")" ?></span>
                 </div>
                 <div class="lastgame">
                     <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $lastChampNameURL ?>.png">
