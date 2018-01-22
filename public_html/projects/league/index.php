@@ -483,7 +483,7 @@ lastMatchInfo();
                 </div>
         </div>
         <footer>
-            <p>Made by Nuno Costa, 20170</p>
+            <p>Made by Nuno Costa, 2017</p>
         </footer>
         <script type="text/javascript">
             /* style CSS File */
