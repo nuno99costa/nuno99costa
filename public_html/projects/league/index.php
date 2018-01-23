@@ -496,7 +496,8 @@ lastMatchInfo();
             <div class="centeredBox">
                 <div id="leagueIDfb">
                     <h2>My Last Game (<?php echo $lastMatchQueueReal ?>)</h2>
-                    <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ." (". $gametime .")" ?></span>
+                    <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ?></span>
+                    <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $gametime ?></span>
                 </div>
                 <div class="lastgame">
                     <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $lastChampNameURL ?>.png">
