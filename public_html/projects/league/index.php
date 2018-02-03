@@ -487,9 +487,9 @@ lastMatchInfo();
             <div class="centeredBox">
                 <h2>Champion Mastery</h2>
                 <div class="mastery">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL2?>.png">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL1?>.png">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL3?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion . "/img/champion/" . $champNameURL2 ?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion . "/img/champion/" . $champNameURL1 ?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion . "/img/champion/" . $champNameURL3 ?>.png">
                 </div>
             </div>
         </div>
