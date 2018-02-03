@@ -464,7 +464,7 @@ lastMatchInfo();
                     <div class="rankfb" id="flexsr">
                         <h3>5v5 Flex Queue</h3>
                         <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ." lp"; ?></p>
-                        <img src=".<?php echo$ddragonVersion $imgtierFlexSR?>">
+                        <img src=".<?php echo $imgtierFlexSR?>">
                     </div>
                     <div class="rankfb" id="solosr">
                         <h3>5v5 Solo Queue</h3>
@@ -499,7 +499,7 @@ lastMatchInfo();
                     <span style="background-color: <?php echo $participantWLcolor ?>"><?php echo $participantWLresult ?></span>
                 </div>
                 <div class="lastgame">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $lastChampNameURL ?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $lastChampNameURL ?>.png">
                     <img src="./perk/<?php echo $participantKeystone ?>.png">
                     <img src="./perkStyle/<?php echo $participantSecondaryPath ?>.png" id="secondary">
                 </div>
