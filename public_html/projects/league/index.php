@@ -459,7 +459,7 @@ lastMatchInfo();
                 </div>
             </div>
         </div>
-        <div class="contentCard"><?php echo $ddragonVersion ?>
+        <div class="contentCard">
             <div class="centeredBox">
                 <h2>Rank</h2>
                 <div class="flexbox">
