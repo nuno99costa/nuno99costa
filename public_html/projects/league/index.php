@@ -449,7 +449,7 @@ lastMatchInfo();
             </nav>
         </header>
         <div id="card1">
-            <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/7.24.2/img/profileicon/<?php echo $summonerIcon ?>.png">
+            <img id="mainImage" src="http://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/profileicon/<?php echo $summonerIcon ?>.png">
             <div class="centeredBoxwithImage">
                 <div id="leagueIDfb">
                     <h1><?php echo $summonerName ?></h1>
@@ -457,14 +457,14 @@ lastMatchInfo();
                 </div>
             </div>
         </div>
-        <div class="contentCard">
+        <div class="contentCard"><?php echo $ddragonVersion ?>
             <div class="centeredBox">
                 <h2>Rank</h2>
                 <div class="flexbox">
                     <div class="rankfb" id="flexsr">
                         <h3>5v5 Flex Queue</h3>
                         <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ." lp"; ?></p>
-                        <img src=".<?php echo $imgtierFlexSR?>">
+                        <img src=".<?php echo$ddragonVersion $imgtierFlexSR?>">
                     </div>
                     <div class="rankfb" id="solosr">
                         <h3>5v5 Solo Queue</h3>
@@ -486,9 +486,9 @@ lastMatchInfo();
             <div class="centeredBox">
                 <h2>Champion Mastery</h2>
                 <div class="mastery">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $champNameURL2?>.png">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $champNameURL1?>.png">
-                    <img src="https://ddragon.leagueoflegends.com/cdn/7.24.2/img/champion/<?php echo $champNameURL3?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL2?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL1?>.png">
+                    <img src="https://ddragon.leagueoflegends.com/cdn/<?php echo $ddragonVersion ?>/img/champion/<?php echo $champNameURL3?>.png">
                 </div>
             </div>
         </div>
