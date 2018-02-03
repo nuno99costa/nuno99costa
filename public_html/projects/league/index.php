@@ -98,6 +98,7 @@ function serverInfo()
 	$versionResult = file_get_contents($versionURL);
 	$versionResult = json_decode($versionResult, true);
 	$ddragonVersion = $versionResult["dd"];
+    $ddragonVersion = "8.2.1";
 };
 
 // fetch summoner ID, account ID, icon ID and lvl
