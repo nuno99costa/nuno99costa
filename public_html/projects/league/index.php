@@ -493,6 +493,7 @@ lastMatchInfo();
                 <div id="leagueIDfb">
                     <h1><?php echo $summonerName ?></h1>
                     <span>Lvl <?php echo $summonerLvl?></span>
+                    <p><? php echo $champNameSheetDecoded["data"][0]?></p>
                 </div>
             </div>
         </div>
@@ -504,7 +505,6 @@ lastMatchInfo();
                         <h3>5v5 Flex Queue</h3>
                         <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ." lp"; ?></p>
                         <img src=".<?php echo $imgtierFlexSR?>">
-                        <p><?php echo $lastChampName ?></p>
                     </div>
                     <div class="rankfb" id="solosr">
                         <h3>5v5 Solo Queue</h3>
