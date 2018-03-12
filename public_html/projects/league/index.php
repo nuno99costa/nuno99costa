@@ -300,16 +300,11 @@ function masteryList()
 	$champID3 = $champMasteryDecoded[2]['championId'];
 
 	// take champion ID and turn it into champion name
-    $i = 0;
-    $flagger = true;
-    while ($flagger == false){
-            if ($champNameSheetDecoded['data'][$i]["key"] == $champID1){
-                $flagger = true;
-                $champName1 = $champNameSheetDecoded['data'][$i];
-            }else{
-                $i++;
-            }
-    }
+    foreach ($champNameSheetDecoded['data'] as $key => $value){
+        if ($value['key'] = $champID1){
+            champName1 = $value['id'];
+        }
+    };
     $i = 0;
     $flagger = true;
     while ($flagger == false){
@@ -493,7 +488,6 @@ lastMatchInfo();
                 <div id="leagueIDfb">
                     <h1><?php echo $summonerName ?></h1>
                     <span>Lvl <?php echo $summonerLvl?></span>
-                    <p><? php echo print_r($champNameSheetDecoded) ?></p>
                 </div>
             </div>
         </div>
