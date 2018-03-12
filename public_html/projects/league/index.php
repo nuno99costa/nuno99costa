@@ -374,6 +374,7 @@ function lastMatchesInfo()
             $i++;
         }
     }
+    $lastChampName = $champNameSheetDecoded['data'][$i];
 	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampName);
     $lastChampNameURL = str_replace(' ', '', $lastChampNameURL);
 };
