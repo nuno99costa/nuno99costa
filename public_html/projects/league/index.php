@@ -493,7 +493,7 @@ lastMatchInfo();
                 <div id="leagueIDfb">
                     <h1><?php echo $summonerName ?></h1>
                     <span>Lvl <?php echo $summonerLvl?></span>
-                    <p><? php echo $champNameSheetDecoded["data"][0]["key"] ?></p>
+                    <p><? php echo $champNameSheetDecoded[0]["data"][0]["key"] ?></p>
                 </div>
             </div>
         </div>
