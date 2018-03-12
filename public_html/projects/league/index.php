@@ -301,23 +301,21 @@ function masteryList()
 
 	// take champion ID and turn it into champion name
     $i = 0;
-    $flag = false;
-    while ($flag = false){
+    $flagg = false;
+    while ($flagg = false){
             if ($champNameSheetDecoded['data'][$i]["key"] = $champID1){
-                $flag = true;
+                $flagg = true;
                 $champName1 = $champNameSheetDecoded['data'][$i];
-                $champNameURL1 = $champNameSheetDecoded['data'][$i]["key"];
             }else{
                 $i++;
             }
     }
     $i = 0;
-    $flag = false;
-    while ($flag = false){
+    $flagg = false;
+    while ($flagg = false){
             if ($champNameSheetDecoded['data'][$i]["key"] = $champID2){
-                $flag = true;
+                $flagg = true;
                 $champName2 = $champNameSheetDecoded['data'][$i];
-                $champNameURL2 = $champNameSheetDecoded['data'][$i]["key"];
             }else{
                 $i++;
             }
@@ -328,7 +326,6 @@ function masteryList()
             if ($champNameSheetDecoded['data'][$i]["key"] = $champID3){
                 $flag = true;
                 $champName3 = $champNameSheetDecoded['data'][$i];
-                $champNameURL3 = $champNameSheetDecoded['data'][$i]["key"];
             }else{
                 $i++;
             }
@@ -373,12 +370,11 @@ function lastMatchesInfo()
         if ($champNameSheetDecoded['data'][$i]["key"] = $lastMatchChampionID){
             $flag = true;
             $lastChampName = $champNameSheetDecoded['data'][$i];
-            $lastChampNameURL = $champNameSheetDecoded['data'][$i]["key"];
         }else{
             $i++;
         }
     }
-	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampNameURL);
+	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampName);
     $lastChampNameURL = str_replace(' ', '', $lastChampNameURL);
 };
 
