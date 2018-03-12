@@ -306,12 +306,12 @@ function masteryList()
         }
     };
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] = $champID1){
+        if ($value['key'] = $champID2){
             $champName2 = $value['id'];
         }
     };
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] = $champID1){
+        if ($value['key'] = $champID3){
             $champName3 = $value['id'];
         }
     };
@@ -350,11 +350,10 @@ function lastMatchesInfo()
 		$lastMatchQueueReal = "Normal";
 	};
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] = $champID1){
+        if ($value['key'] = $lastChampName){
             $lastChampName = $value['id'];
         }
     };
-    $lastChampName = $champNameSheetDecoded['data'][$i];
 	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampName);
     $lastChampNameURL = str_replace(' ', '', $lastChampNameURL);
 };
