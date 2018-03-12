@@ -10,7 +10,7 @@ foreach ($array['data'] as $key => $value){
     echo "<br>";
     echo $value['id'];
     echo "<br>";
-    if ($value['key'] = "10"){
+    if ($value['key'] = 10){
         echo $value['id'];
     };
 };
