@@ -302,17 +302,17 @@ function masteryList()
 	// take champion ID and turn it into champion name
     foreach ($champNameSheetDecoded['data'] as $key => $value){
         if ($value['key'] == intval($champID1)){
-            $champName1 = $value['id'];
+            $champNameURL1 = $value['id'];
         }
     };
     foreach ($champNameSheetDecoded['data'] as $key => $value){
         if ($value['key'] == intval($champID2)){
-            $champName2 = $value['id'];
+            $champNameURL2 = $value['id'];
         }
     };
     foreach ($champNameSheetDecoded['data'] as $key => $value){
         if ($value['key'] == intval($champID3)){
-            $champName3 = $value['id'];
+            $champNameURL3 = $value['id'];
         }
     };
 };
@@ -344,7 +344,7 @@ function lastMatchesInfo()
 		$lastMatchQueueReal = "Normal";
 	};
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] = $lastChampName){
+        if ($value['key'] == intval($lastChampName)){
             $lastChampNameURL = $value['id'];
         }
     };
