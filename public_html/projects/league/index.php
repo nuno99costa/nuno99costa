@@ -504,6 +504,7 @@ lastMatchInfo();
                         <h3>5v5 Flex Queue</h3>
                         <p><?php echo $tierFlexSR ." ". $rankFlexSR .", ". $lpFlexSR ." lp"; ?></p>
                         <img src=".<?php echo $imgtierFlexSR?>">
+                        <p><?php echo $lastChampName ?></p>
                     </div>
                     <div class="rankfb" id="solosr">
                         <h3>5v5 Solo Queue</h3>
