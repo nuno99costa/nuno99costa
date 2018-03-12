@@ -1,10 +1,9 @@
 <?php
 $champNameSheet = file_get_contents("champions.json");
 $champNameSheetDecoded = json_decode($champNameSheet, true);
-echo '<pre>' . print_r($champNameSheetDecoded) . '</pre>';
-echo print_r($champNameSheetDecoded["data"]["Aatrox"]);
-echo "TETETETETET";
-echo print_r($champNameSheetDecoded["data"][0]);
-echo "TETETETETET";
-echo print_r($champNameSheetDecoded["data"][0]["id"]);
+foreach(champNameSheetDecoded['data'] as $key => $val) {
+      if ($val[id] = 123){
+          echo $key;
+      }
+}
 ?>
