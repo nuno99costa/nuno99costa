@@ -301,7 +301,7 @@ function masteryList()
 
 	// take champion ID and turn it into champion name
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] = $champID1){
+        if ($value['key'] == intval($champID1)){
             $champName1 = $value['id'];
         }
     };
