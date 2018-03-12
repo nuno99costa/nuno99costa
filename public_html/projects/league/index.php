@@ -315,12 +315,6 @@ function masteryList()
             $champName3 = $value['id'];
         }
     };
-
-	// treating champion name by removing any possible spaces
-
-	$champNameURL1 = preg_replace("/(\t|\n|\v|\f|\r| |\xC2\x85|\xc2\xa0|\xe1\xa0\x8e|\xe2\x80[\x80-\x8D]|\xe2\x80\xa8|\xe2\x80\xa9|\xe2\x80\xaF|\xe2\x81\x9f|\xe2\x81\xa0|\xe3\x80\x80|\xef\xbb\xbf)+/", "", $champName1);
-	$champNameURL2 = preg_replace("/(\t|\n|\v|\f|\r| |\xC2\x85|\xc2\xa0|\xe1\xa0\x8e|\xe2\x80[\x80-\x8D]|\xe2\x80\xa8|\xe2\x80\xa9|\xe2\x80\xaF|\xe2\x81\x9f|\xe2\x81\xa0|\xe3\x80\x80|\xef\xbb\xbf)+/", "", $champName2);
-	$champNameURL3 = preg_replace("/(\t|\n|\v|\f|\r| |\xC2\x85|\xc2\xa0|\xe1\xa0\x8e|\xe2\x80[\x80-\x8D]|\xe2\x80\xa8|\xe2\x80\xa9|\xe2\x80\xaF|\xe2\x81\x9f|\xe2\x81\xa0|\xe3\x80\x80|\xef\xbb\xbf)+/", "", $champName3);
 };
 
 // get last match id and metadata about it
@@ -351,11 +345,9 @@ function lastMatchesInfo()
 	};
     foreach ($champNameSheetDecoded['data'] as $key => $value){
         if ($value['key'] = $lastChampName){
-            $lastChampName = $value['id'];
+            $lastChampNameURL = $value['id'];
         }
     };
-	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampName);
-    $lastChampNameURL = str_replace(' ', '', $lastChampNameURL);
 };
 
 // fetch last match info about the summoner in use
