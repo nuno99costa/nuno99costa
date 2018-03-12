@@ -8,5 +8,8 @@ foreach ($array['data'] as $key => $value){
     echo $key;
     echo "<br>";
     echo $value['id'];
+    if ($value['key'] = 10){
+        echo $value['id'];
+    }
 };
 ?>
