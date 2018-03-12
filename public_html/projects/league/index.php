@@ -300,10 +300,39 @@ function masteryList()
 	$champID3 = $champMasteryDecoded[2]['championId'];
 
 	// take champion ID and turn it into champion name
-
-	$champName1 = $champNameSheetDecoded['data']["$champID1"]['name'];
-	$champName2 = $champNameSheetDecoded['data']["$champID2"]['name'];
-	$champName3 = $champNameSheetDecoded['data']["$champID3"]['name'];
+    $i = 0;
+    flag = false;
+    while ($flag = false){
+            if ($champNameSheetDecoded['data'][$i]["key"] = $champID1){
+                $flag = true;
+                $champName1 = $champNameSheetDecoded['data'][$i];
+                $champNameURL1 = $champNameSheetDecoded['data'][$i]["key"];
+            }else{
+                $i++;
+            }
+    }
+    $i = 0;
+    flag = false;
+    while ($flag = false){
+            if ($champNameSheetDecoded['data'][$i]["key"] = $champID2){
+                $flag = true;
+                $champName2 = $champNameSheetDecoded['data'][$i];
+                $champNameURL2 = $champNameSheetDecoded['data'][$i]["key"];
+            }else{
+                $i++;
+            }
+    }
+    $i = 0;
+    flag = false;
+    while ($flag = false){
+            if ($champNameSheetDecoded['data'][$i]["key"] = $champID3){
+                $flag = true;
+                $champName3 = $champNameSheetDecoded['data'][$i];
+                $champNameURL3 = $champNameSheetDecoded['data'][$i]["key"];
+            }else{
+                $i++;
+            }
+    }
 
 	// treating champion name by removing any possible spaces
 
@@ -339,11 +368,12 @@ function lastMatchesInfo()
 		$lastMatchQueueReal = "Normal";
 	};
     $i = 0;
-    while (!$flag){
-        if ($champNameSheetDecoded['data'][$i]["id"] = $lastMatchChampionID){
+    flag = false;
+    while ($flag = false){
+        if ($champNameSheetDecoded['data'][$i]["key"] = $lastMatchChampionID){
             $flag = true;
             $lastChampName = $champNameSheetDecoded['data'][$i];
-            $lastChampNameURL = $champNameSheetDecoded['data'][$i]["id"];
+            $lastChampNameURL = $champNameSheetDecoded['data'][$i]["key"];
         }else{
             $i++;
         }
