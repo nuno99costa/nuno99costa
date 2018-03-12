@@ -340,7 +340,7 @@ function lastMatchesInfo()
 	};
     $i = 0;
     while (!$flag){
-        if ($champNameSheetDecoded['data'][$i]["$lastMatchChampionID"]){
+        if ($champNameSheetDecoded['data'][$i]["id"] = $lastMatchChampionID){
             $flag = true;
             $lastChampName = $champNameSheetDecoded['data']["$lastMatchChampionID"]['name'];
             $lastChampNameURL = $champNameSheetDecoded['data'][$i];
