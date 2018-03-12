@@ -560,6 +560,8 @@ lastMatchInfo();
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script async language="JavaScript" type="text/javascript" src="../../js/index.js"></script>
+        <p><?php echo intval($champID1) ?></p>
+        <p><?php echo $champID1 ?></p>
     </body>
 
     </html>
