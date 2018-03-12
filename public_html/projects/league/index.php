@@ -339,9 +339,8 @@ function lastMatchesInfo()
 		$lastMatchQueueReal = "Normal";
 	};
 	$lastChampName = $champNameSheetDecoded['data']["$lastMatchChampionID"]['name'];
-	$lastChampNameURL = preg_replace("/[^ \w]+/", "", $lastChampName);
+	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampNameURL);
     $lastChampNameURL = str_replace(' ', '', $lastChampNameURL);
-    $lastChampNameURL = str_replace("'", '', $lastChampNameURL);
 };
 
 // fetch last match info about the summoner in use
