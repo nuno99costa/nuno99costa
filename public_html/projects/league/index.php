@@ -301,7 +301,7 @@ function masteryList()
 
 	// take champion ID and turn it into champion name
     $i = 0;
-    flag = false;
+    $flag = false;
     while ($flag = false){
             if ($champNameSheetDecoded['data'][$i]["key"] = $champID1){
                 $flag = true;
@@ -312,7 +312,7 @@ function masteryList()
             }
     }
     $i = 0;
-    flag = false;
+    $flag = false;
     while ($flag = false){
             if ($champNameSheetDecoded['data'][$i]["key"] = $champID2){
                 $flag = true;
@@ -323,7 +323,7 @@ function masteryList()
             }
     }
     $i = 0;
-    flag = false;
+    $flag = false;
     while ($flag = false){
             if ($champNameSheetDecoded['data'][$i]["key"] = $champID3){
                 $flag = true;
@@ -368,7 +368,7 @@ function lastMatchesInfo()
 		$lastMatchQueueReal = "Normal";
 	};
     $i = 0;
-    flag = false;
+    $flag = false;
     while ($flag = false){
         if ($champNameSheetDecoded['data'][$i]["key"] = $lastMatchChampionID){
             $flag = true;
