@@ -212,7 +212,7 @@ function rankInfo()
 		};
 	}
 	else {
-		$flag = 0;
+		$flag == 0;
 		for ($queue = 0; $queue <= $n; $queue++) {
 			if ($rankInfoDecoded[$queue]['queueType'] === 'RANKED_FLEX_SR') {
 				$flag = $flag + 1;
@@ -260,19 +260,19 @@ function rankInfo()
 				$imgtierFlexTT = "/base-icons/" . $tierFlexTT . ".png";
 			};
 		};
-		if ($flag = 3) {
+		if ($flag == 3) {
 			$tierFlexTT = "Unranked";
 			$rankFlexTT = "1";
 			$lpFlexTT = "0";
 			$imgtierFlexTT = "/base-icons/Provisional.png";
 		}
-		elseif ($flag = 4) {
+		elseif ($flag == 4) {
 			$tierSolo = "Unranked";
 			$rankSolo = "1";
 			$lpSolo = "0";
 			$imgtierSolo = "/base-icons/Provisional.png";
 		}
-		elseif ($flag = 5) {
+		elseif ($flag == 5) {
 			$tierFlexSR = "Unranked";
 			$rankFlexSR = "1";
 			$lpFlexSR = "0";
@@ -301,17 +301,17 @@ function masteryList()
 
 	// take champion ID and turn it into champion name
     $i = 0;
-    $flag = false;
-    while ($flag == false){
+    $flagger = true;
+    while ($flagger == false){
             if ($champNameSheetDecoded['data'][$i]["key"] == $champID1){
-                $flag = true;
+                $flagger = true;
                 $champName1 = $champNameSheetDecoded['data'][$i];
             }else{
                 $i++;
             }
     }
     $i = 0;
-    $flagger = false;
+    $flagger = true;
     while ($flagger == false){
             if ($champNameSheetDecoded['data'][$i]["key"] == $champID2){
                 $flagger = true;
@@ -321,7 +321,7 @@ function masteryList()
             }
     }
     $i = 0;
-    $flagger = false;
+    $flagger = true;
     while ($flagger == false){
             if ($champNameSheetDecoded['data'][$i]["key"] == $champID3){
                 $flagger = true;
@@ -365,7 +365,7 @@ function lastMatchesInfo()
 		$lastMatchQueueReal = "Normal";
 	};
     $i = 0;
-    $flagger = false;
+    $flagger = true;
     while ($flagger = false){
         if ($champNameSheetDecoded['data'][$i]["key"] == $lastMatchChampionID){
             $flagger = true;
