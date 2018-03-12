@@ -344,7 +344,7 @@ function lastMatchesInfo()
 		$lastMatchQueueReal = "Normal";
 	};
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] == intval($lastMatchChampID)){
+        if ($value['key'] == intval($lastMatchChampionID)){
             $lastChampNameURL = $value['id'];
         }
     };
