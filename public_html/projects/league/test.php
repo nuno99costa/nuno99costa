@@ -11,5 +11,5 @@ $champNameSheetDecoded = json_decode($champNameSheet, true);
 $champID1= 145;
 $i = 0;
     $flag = false;
-    echo $champNameSheetDecoded['data'][$i]["key"]
+    echo $champNameSheetDecoded['data'][$i]["key"];
 ?>
