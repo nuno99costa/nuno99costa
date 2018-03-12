@@ -5,11 +5,13 @@ echo "<pre>";
 echo print_r ($array);
 echo "</pre>";
 foreach ($array['data'] as $key => $value){
+    echo "<br>";
     echo $key;
     echo "<br>";
     echo $value['id'];
-    if ($value['key'] = 10){
+    echo "<br>";
+    if ($value['key'] = "10"){
         echo $value['id'];
-    }
+    };
 };
 ?>
