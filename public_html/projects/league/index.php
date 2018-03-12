@@ -338,7 +338,17 @@ function lastMatchesInfo()
 	else {
 		$lastMatchQueueReal = "Normal";
 	};
-	$lastChampName = $champNameSheetDecoded['data']["$lastMatchChampionID"]['name'];
+    i = 0;
+    while (!flag){
+        if ($champNameSheetDecoded['data'][i]["$lastMatchChampionID"]){
+            flag = true;
+            $lastChampName = $champNameSheetDecoded['data']["$lastMatchChampionID"]['name'];
+            $lastChampNameURL = $champNameSheetDecoded['data'][i];
+        }else{
+            i++;
+        }
+
+    }
 	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampNameURL);
     $lastChampNameURL = str_replace(' ', '', $lastChampNameURL);
 };
