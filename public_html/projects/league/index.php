@@ -306,12 +306,12 @@ function masteryList()
         }
     };
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] = $champID2){
+        if ($value['key'] == intval($champID2)){
             $champName2 = $value['id'];
         }
     };
     foreach ($champNameSheetDecoded['data'] as $key => $value){
-        if ($value['key'] = $champID3){
+        if ($value['key'] == intval($champID3)){
             $champName3 = $value['id'];
         }
     };
@@ -560,8 +560,6 @@ lastMatchInfo();
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script async language="JavaScript" type="text/javascript" src="../../js/index.js"></script>
-        <p><?php echo intval($champID1) ?></p>
-        <p><?php echo $champID1 ?></p>
     </body>
 
     </html>
