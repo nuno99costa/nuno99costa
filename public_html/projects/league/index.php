@@ -302,29 +302,19 @@ function masteryList()
 	// take champion ID and turn it into champion name
     foreach ($champNameSheetDecoded['data'] as $key => $value){
         if ($value['key'] = $champID1){
-            champName1 = $value['id'];
+            $champName1 = $value['id'];
         }
     };
-    $i = 0;
-    $flagger = true;
-    while ($flagger == false){
-            if ($champNameSheetDecoded['data'][$i]["key"] == $champID2){
-                $flagger = true;
-                $champName2 = $champNameSheetDecoded['data'][$i];
-            }else{
-                $i++;
-            }
-    }
-    $i = 0;
-    $flagger = true;
-    while ($flagger == false){
-            if ($champNameSheetDecoded['data'][$i]["key"] == $champID3){
-                $flagger = true;
-                $champName3 = $champNameSheetDecoded['data'][$i];
-            }else{
-                $i++;
-            }
-    }
+    foreach ($champNameSheetDecoded['data'] as $key => $value){
+        if ($value['key'] = $champID1){
+            $champName2 = $value['id'];
+        }
+    };
+    foreach ($champNameSheetDecoded['data'] as $key => $value){
+        if ($value['key'] = $champID1){
+            $champName3 = $value['id'];
+        }
+    };
 
 	// treating champion name by removing any possible spaces
 
@@ -359,16 +349,11 @@ function lastMatchesInfo()
 	else {
 		$lastMatchQueueReal = "Normal";
 	};
-    $i = 0;
-    $flagger = true;
-    while ($flagger = false){
-        if ($champNameSheetDecoded['data'][$i]["key"] == $lastMatchChampionID){
-            $flagger = true;
-            $lastChampName = $champNameSheetDecoded['data'][$i];
-        }else{
-            $i++;
+    foreach ($champNameSheetDecoded['data'] as $key => $value){
+        if ($value['key'] = $champID1){
+            $lastChampName = $value['id'];
         }
-    }
+    };
     $lastChampName = $champNameSheetDecoded['data'][$i];
 	$lastChampNameURL = preg_replace('/[^A-Za-z0-9\-]/', '', $lastChampName);
     $lastChampNameURL = str_replace(' ', '', $lastChampNameURL);
