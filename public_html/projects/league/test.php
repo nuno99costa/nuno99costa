@@ -11,12 +11,5 @@ $champNameSheetDecoded = json_decode($champNameSheet, true);
 $champID1= 145;
 $i = 0;
     $flag = false;
-    while ($flag == false){
-            if ($champNameSheetDecoded['data'][$i]["key"] == $champID1){
-                $flag = true;
-                $champName1 = $champNameSheetDecoded['data'][$i];
-            }else{
-                $i++;
-            }
-    }
+    echo $champNameSheetDecoded['data'][$i]["key"]
 ?>
