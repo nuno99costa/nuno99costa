@@ -416,7 +416,7 @@ masteryList();
 lastMatchesInfo();
 lastMatchInfo();
 
-    $ddragonVersion = "8.5.2";
+    $ddragonVersion = "8.7.1";
 ?>
 <!doctype html>
     <html lang="pt">
